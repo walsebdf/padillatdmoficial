@@ -352,6 +352,9 @@ td {
   padding-left: 30px;
   box-shadow: 10px 5px 15px greenyellow;
 }
+#tablaJug a {
+  text-decoration: none;
+}
 
 .jugador {
   width: 300px;
