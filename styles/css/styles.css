@@ -683,6 +683,39 @@ td {
   margin-top: 15px;
 }
 
+/*End Podios*/
+/*Comienzo JugParticulares*/
+.contenidoPrincipalJugPart {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  box-shadow: 10px 5px 15px greenyellow;
+}
+.contenidoPrincipalJugPart .jugGranCard {
+  width: 100%;
+}
+.contenidoPrincipalJugPart .jugGranCard .nombreCompleto {
+  font-family: "Bangers", cursive;
+  color: greenyellow;
+  padding-top: 15px;
+  box-shadow: 10px 5px 15px greenyellow;
+}
+.contenidoPrincipalJugPart .jugGranCard .jugSmallCard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+}
+.contenidoPrincipalJugPart .jugGranCard .jugSmallCard p {
+  color: greenyellow;
+  font-size: 25px;
+}
+
 /*Comienzo de los MQ*/
 @media screen and (max-width: 1590px) {
   .contenidoPrincipal {
