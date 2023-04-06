@@ -58,8 +58,8 @@ header:hover {
 
 .contenidoPrincipal {
   display: grid;
-  grid-template-areas: "novedades  titulo          titulo" "novedades  contenidoup     publicidad" "novedades  contenidodown   publicidad" "footer     footer          footer";
-  grid-template-columns: 35vh auto 25vh;
+  grid-template-areas: "novedades  titulo" "novedades  contenidoup" "novedades  contenidodown" "footer     footer";
+  grid-template-columns: 35vh auto;
   grid-template-rows: 10vh 300px auto 30vh;
 }
 
@@ -176,6 +176,7 @@ footer {
   justify-content: space-around;
   align-items: center;
   color: greenyellow;
+  padding-top: 20px;
 }
 
 .lemaPadillero {
@@ -190,8 +191,8 @@ footer {
 /*Pagina TMTs*/
 .contenidoPrincipaltmt {
   display: grid;
-  grid-template-areas: "ganadorestmt tituloTmt      publicidad" "ganadorestmt sectionuptmt   publicidad" "ganadorestmt sectiondowntmt publicidad" "footer       footer         footer";
-  grid-template-columns: 30vh auto 25vh;
+  grid-template-areas: "ganadorestmt tituloTmt" "ganadorestmt sectionuptmt" "ganadorestmt sectiondowntmt" "footer       footer";
+  grid-template-columns: 30vh auto;
   grid-template-rows: 100px 500px 500px 30vh;
 }
 
@@ -283,8 +284,8 @@ td {
 /*Página Novedades*/
 .contenidoPrincipalNov {
   display: grid;
-  grid-template-areas: "tituloNov      publicidad" "tabla1Nov      publicidad" "footer         footer";
-  grid-template-columns: auto 25vh;
+  grid-template-areas: "tituloNov" "tabla1Nov" "footer";
+  grid-template-columns: auto;
   grid-template-rows: 100px auto 30vh;
 }
 
@@ -326,8 +327,8 @@ td {
 /*Pagina de Jugadores*/
 .contenidoPrincipalJug {
   display: grid;
-  grid-template-areas: "tituloJug      publicidad" "tablaJug       publicidad" "footer         footer";
-  grid-template-columns: auto 25vh;
+  grid-template-areas: "tituloJug" "tablaJug" "footer";
+  grid-template-columns: auto;
   grid-template-rows: 100px auto 30vh;
 }
 
@@ -509,8 +510,8 @@ td {
 /*Pagina de Contacto*/
 .contenidoPrincipalCont {
   display: grid;
-  grid-template-areas: "tituloCon      publicidad" "disclaimer     publicidad" "formulario     publicidad" "footer         footer";
-  grid-template-columns: auto 25vh;
+  grid-template-areas: "tituloCon" "disclaimer" "formulario" "footer";
+  grid-template-columns: auto;
   grid-template-rows: 100px auto auto 30vh;
 }
 
@@ -576,8 +577,8 @@ td {
 /*Comienzo página NovSL*/
 .contenidoPrincipalNovSL {
   display: grid;
-  grid-template-areas: "tituloF8UVVA   publicidad" "notaUVVA       publicidad" "footer         footer";
-  grid-template-columns: auto 25vh;
+  grid-template-areas: "tituloF8UVVA" "notaUVVA" "footer";
+  grid-template-columns: auto;
   grid-template-rows: 100px auto 30vh;
 }
 
@@ -634,13 +635,61 @@ td {
 }
 
 /*End Página de NovSL*/
+/*Comienzo Pagina Podios*/
+.contenidoPrincipalPodios {
+  display: grid;
+  grid-template-areas: "tituloPodios   tituloPodios" "imagenesPodios imagenesPodios" "footer         footer";
+  grid-template-columns: auto auto;
+  grid-template-rows: 100px auto 30vh;
+}
+.contenidoPrincipalPodios #tituloPodios {
+  grid-area: tituloPodios;
+  font-family: "Bangers", cursive;
+  color: greenyellow;
+  box-shadow: 10px 5px 15px greenyellow;
+  padding-top: 15px;
+}
+.contenidoPrincipalPodios #imagenesPodios {
+  grid-area: imagenesPodios;
+  font-family: "Raleway", sans-serif;
+  color: greenyellow;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  box-shadow: 10px 5px 15px greenyellow;
+}
+.contenidoPrincipalPodios #imagenesPodios .podiosGranCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.contenidoPrincipalPodios #imagenesPodios .podiosGranCard .fecha {
+  padding-top: 15px;
+}
+.contenidoPrincipalPodios #imagenesPodios .podiosGranCard .podiosCard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+.contenidoPrincipalPodios #imagenesPodios .podiosGranCard .podiosCard .podiosAbril {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contenidoPrincipalPodios #imagenesPodios .podiosGranCard .podiosCard .podiosAbril table {
+  margin-top: 15px;
+}
+
 /*Comienzo de los MQ*/
 @media screen and (max-width: 1590px) {
   .contenidoPrincipal {
     display: grid;
-    grid-template-areas: "novedades  titulo" "novedades  contenidoup" "novedades  contenidodown" "publicidad publicidad" "footer     footer";
+    grid-template-areas: "novedades  titulo" "novedades  contenidoup" "novedades  contenidodown" "footer     footer";
     grid-template-columns: 35vh auto;
-    grid-template-rows: 10vh auto auto 30vh 30vh;
+    grid-template-rows: 10vh auto auto 30vh;
   }
   .escudoSinTexto {
     display: block;
@@ -664,16 +713,16 @@ td {
   /*Pagina TMTs*/
   .contenidoPrincipaltmt {
     display: grid;
-    grid-template-areas: "ganadorestmt  tituloTmt" "ganadorestmt  sectionuptmt" "ganadorestmt  sectiondowntmt" "publicidad publicidad" "footer     footer";
+    grid-template-areas: "ganadorestmt  tituloTmt" "ganadorestmt  sectionuptmt" "ganadorestmt  sectiondowntmt" "footer     footer";
     grid-template-columns: 35vh auto;
-    grid-template-rows: 10vh auto auto 30vh 30vh;
+    grid-template-rows: 10vh auto auto 30vh;
   }
   /*End pagina TMTs*/
   /*Pagina NovSL*/
   .contenidoPrincipalNovSL {
     display: grid;
-    grid-template-areas: "tituloF8UVVA   publicidad" "notaUVVA       publicidad" "footer         footer";
-    grid-template-columns: auto 30vh;
+    grid-template-areas: "tituloF8UVVA" "notaUVVA" "footer";
+    grid-template-columns: auto;
     grid-template-rows: 100px auto 30vh;
   }
   /*End NovSL*/
@@ -712,21 +761,9 @@ td {
 @media screen and (max-width: 991px) {
   .contenidoPrincipal {
     display: grid;
-    grid-template-areas: "titulo" "contenidoup" "contenidodown" "novedades" "publicidad" "footer";
-    grid-template-rows: 10vh auto auto auto 150px auto;
+    grid-template-areas: "titulo" "contenidoup" "contenidodown" "novedades" "footer";
+    grid-template-rows: 10vh auto auto auto 30vh;
     grid-template-columns: 100%;
-  }
-  #publicidad {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: center;
-  }
-  #publicidad1 {
-    display: none;
-  }
-  #publicidad3 {
-    display: none;
   }
   #contenidoup {
     box-shadow: inset 0px -5px 15px greenyellow;
@@ -734,8 +771,8 @@ td {
   /*Pagina TMTs*/
   .contenidoPrincipaltmt {
     display: grid;
-    grid-template-areas: "tituloTmt" "sectionuptmt" "sectiondowntmt" "publicidad" "footer";
-    grid-template-rows: auto auto auto 150px 30vh 30vh;
+    grid-template-areas: "tituloTmt" "sectionuptmt" "sectiondowntmt" "footer";
+    grid-template-rows: auto auto auto 30vh;
     grid-template-columns: 100%;
   }
   #ganadoresTmt {
@@ -745,31 +782,31 @@ td {
   /*Página de Novedades*/
   .contenidoPrincipalNov {
     display: grid;
-    grid-template-areas: "tituloNov" "tabla1Nov" "publicidad" "footer";
+    grid-template-areas: "tituloNov" "tabla1Nov" "footer";
     grid-template-columns: auto;
-    grid-template-rows: auto auto 20vh auto;
+    grid-template-rows: auto auto 30vh;
   }
   /*End pagina de novedades*/
   /*Pagina de Jugadores*/
   .contenidoPrincipalJug {
     display: grid;
-    grid-template-areas: "tituloJug" "tablaJug" "publicidad" "footer";
+    grid-template-areas: "tituloJug" "tablaJug" "footer";
     grid-template-columns: auto;
-    grid-template-rows: auto auto 20vh auto;
+    grid-template-rows: auto auto 30vh;
   }
   /*End pagina de Jugadores*/
   /*Pagina de Contacto*/
   .contenidoPrincipalCont {
     display: grid;
-    grid-template-areas: "tituloCon" "disclaimer" "formulario" "publicidad" "footer";
+    grid-template-areas: "tituloCon" "disclaimer" "formulario" "footer";
     grid-template-columns: auto;
-    grid-template-rows: auto auto auto 20vh auto;
+    grid-template-rows: auto auto auto 30vh;
   }
   /*End pagina de contacto*/
   /*Pagina de NovSL*/
   .contenidoPrincipalNovSL {
     display: grid;
-    grid-template-areas: "tituloF8UVVA" "notaUVVA" "publicidad" "footer";
+    grid-template-areas: "tituloF8UVVA" "notaUVVA" "footer";
     grid-template-columns: auto;
     grid-template-rows: 100px auto auto 30vh;
   }
