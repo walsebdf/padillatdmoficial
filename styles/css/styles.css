@@ -109,6 +109,10 @@ header:hover {
   box-shadow: 10px 5px 15px greenyellow;
 }
 
+#novedades li {
+  color: white;
+  font-family: "Raleway", sans-serif;
+}
 #novedades li a {
   color: greenyellow;
   font-family: "Raleway", sans-serif;
