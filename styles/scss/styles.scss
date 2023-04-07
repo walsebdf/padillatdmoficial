@@ -624,43 +624,26 @@ td{
 /*Comienzo página NovSL*/
 
 .contenidoPrincipalNovSL{
-    display: grid;
-    grid-template-areas: 
-    "tituloF8UVVA"
-    "notaUVVA"
-    "footer";
-    grid-template-columns: auto;
-    grid-template-rows: 100px auto 30vh;
+
 }
 
 #tituloNovSL{
-    grid-area: tituloF8UVVA;
     color: $colorprincipal;
     font-family: $fuenteprincipal;
 }
 
-#notaUVVA{
-    grid-area: notaUVVA;
-    display: grid;
-    grid-template-areas:
-    "tituloNotaf8"
-    "narracionF8UVVA"
-    "tablaF8            ";
-    grid-template-columns: auto;
-    grid-template-rows: 100px auto auto auto auto auto;
+#notaSL{
     padding-left: 30px;
     padding-right: 30px;
     box-shadow: 10px 5px 15px $colorprincipal;
 }
 
-.tituloF8UVVA{
-    grid-area: tituloNotaf8;
+.tituloSL{
     font-family: $fuenteprincipal;
     color: $colorprincipal;
 }
 
-.narracionF8UVVA{
-    grid-area: narracionF8UVVA;
+.narracionSL{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -678,9 +661,11 @@ td{
 }
 
 
-.tablaPosicionesf8{
+.tablaPosiciones{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding: 20px;
 }
 
@@ -851,8 +836,8 @@ td{
     .contenidoPrincipalNovSL{
         display: grid;
         grid-template-areas: 
-        "tituloF8UVVA"
-        "notaUVVA"
+        "tituloSL"
+        "notaSL"
         "footer";
         grid-template-columns: auto;
         grid-template-rows: 100px auto 30vh;
@@ -972,8 +957,8 @@ td{
     .contenidoPrincipalNovSL{
         display: grid;
         grid-template-areas: 
-        "tituloF8UVVA"
-        "notaUVVA"
+        "tituloSL"
+        "notaSL"
         "footer";
         grid-template-columns: auto;
         grid-template-rows: 100px auto auto 30vh;

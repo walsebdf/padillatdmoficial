@@ -578,38 +578,23 @@ td {
 
 /*End pagina de Contacto*/
 /*Comienzo página NovSL*/
-.contenidoPrincipalNovSL {
-  display: grid;
-  grid-template-areas: "tituloF8UVVA" "notaUVVA" "footer";
-  grid-template-columns: auto;
-  grid-template-rows: 100px auto 30vh;
-}
-
 #tituloNovSL {
-  grid-area: tituloF8UVVA;
   color: greenyellow;
   font-family: "Bangers", cursive;
 }
 
-#notaUVVA {
-  grid-area: notaUVVA;
-  display: grid;
-  grid-template-areas: "tituloNotaf8" "narracionF8UVVA" "tablaF8            ";
-  grid-template-columns: auto;
-  grid-template-rows: 100px auto auto auto auto auto;
+#notaSL {
   padding-left: 30px;
   padding-right: 30px;
   box-shadow: 10px 5px 15px greenyellow;
 }
 
-.tituloF8UVVA {
-  grid-area: tituloNotaf8;
+.tituloSL {
   font-family: "Bangers", cursive;
   color: greenyellow;
 }
 
-.narracionF8UVVA {
-  grid-area: narracionF8UVVA;
+.narracionSL {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -617,7 +602,7 @@ td {
   color: greenyellow;
   font-size: 30px;
 }
-.narracionF8UVVA div {
+.narracionSL div {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -626,9 +611,11 @@ td {
   font-size: 20px;
 }
 
-.tablaPosicionesf8 {
+.tablaPosiciones {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 20px;
 }
 
@@ -757,7 +744,7 @@ td {
   /*Pagina NovSL*/
   .contenidoPrincipalNovSL {
     display: grid;
-    grid-template-areas: "tituloF8UVVA" "notaUVVA" "footer";
+    grid-template-areas: "tituloSL" "notaSL" "footer";
     grid-template-columns: auto;
     grid-template-rows: 100px auto 30vh;
   }
@@ -842,7 +829,7 @@ td {
   /*Pagina de NovSL*/
   .contenidoPrincipalNovSL {
     display: grid;
-    grid-template-areas: "tituloF8UVVA" "notaUVVA" "footer";
+    grid-template-areas: "tituloSL" "notaSL" "footer";
     grid-template-columns: auto;
     grid-template-rows: 100px auto auto 30vh;
   }
