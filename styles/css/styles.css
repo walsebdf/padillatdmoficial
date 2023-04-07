@@ -256,6 +256,7 @@ footer {
   flex-wrap: wrap;
   align-content: space-around;
   justify-content: center;
+  width: 50%;
 }
 
 #flyer2 {
@@ -273,6 +274,7 @@ footer {
   flex-wrap: wrap;
   align-content: space-around;
   justify-content: center;
+  width: 50%;
 }
 
 td {
@@ -592,6 +594,7 @@ td {
 .tituloSL {
   font-family: "Bangers", cursive;
   color: greenyellow;
+  padding: 20px;
 }
 
 .narracionSL {
@@ -617,6 +620,7 @@ td {
   justify-content: center;
   align-items: center;
   padding: 20px;
+  box-shadow: 10px 5px 15px greenyellow;
 }
 
 .tituloTabla {
