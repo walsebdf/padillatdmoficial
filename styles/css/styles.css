@@ -672,13 +672,16 @@ td {
   justify-content: space-around;
   width: 100%;
 }
-.contenidoPrincipalPodios #imagenesPodios .podiosGranCard .podiosCard .podiosAbril {
+.contenidoPrincipalPodios #imagenesPodios .podiosGranCard .podiosCard .podiosImg {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.contenidoPrincipalPodios #imagenesPodios .podiosGranCard .podiosCard .podiosAbril table {
+.contenidoPrincipalPodios #imagenesPodios .podiosGranCard .podiosCard .podiosImg table {
   margin-top: 15px;
+}
+.contenidoPrincipalPodios #imagenesPodios .podiosGranCard .podiosCard .podiosImg h3 {
+  padding-top: 25px;
 }
 
 /*End Podios*/
