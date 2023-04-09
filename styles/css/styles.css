@@ -642,6 +642,9 @@ td {
   padding: 20px;
   box-shadow: 10px 5px 15px greenyellow;
 }
+.tablaPosiciones img {
+  width: 100%;
+}
 
 .tituloTabla {
   font-family: "Bangers", cursive;
