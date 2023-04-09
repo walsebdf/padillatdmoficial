@@ -615,6 +615,10 @@ td {
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
+  border: 1px solid red;
+}
+#notaSL .imagenNota img {
+  width: 100%;
 }
 #notaSL .imagenNota p {
   font-size: 15px;
