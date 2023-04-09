@@ -745,7 +745,7 @@ td {
   font-family: "Raleway", sans-serif;
   color: greenyellow;
   font-size: 25px;
-  width: 50%;
+  width: 100%;
   padding-left: 20px;
 }
 .sectionupEnt .sectionupFotos {
@@ -928,6 +928,8 @@ td {
     grid-template-rows: 100px auto auto 30vh;
   }
   /*End página de NovSL*/
+  /*Pagina de Entrenamiento*/
+  /*End página de entrenamiento*/
 }
 
 /*# sourceMappingURL=styles.css.map */
