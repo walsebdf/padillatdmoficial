@@ -873,6 +873,75 @@ td {
   padding-right: 10px;
 }
 
+/*Comienzo de Competencias*/
+.contenidoPpalCompsf {
+  box-shadow: 10px 5px 15px greenyellow;
+}
+
+#tituloComp {
+  font-family: "Bangers", cursive;
+  color: greenyellow;
+  box-shadow: 10px 5px 15px greenyellow;
+  padding-top: 15px;
+}
+
+.textoIntroComp {
+  font-family: "Raleway", sans-serif;
+  color: greenyellow;
+  margin: 20px;
+}
+
+.sectionupComp {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+}
+.sectionupComp div {
+  font-family: "Raleway", sans-serif;
+  color: greenyellow;
+  width: 50%;
+}
+
+.sectionmidComp {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+}
+.sectionmidComp div {
+  font-family: "Raleway", sans-serif;
+  color: greenyellow;
+  width: 50%;
+}
+
+.sectiondownComp {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+}
+.sectiondownComp div {
+  font-family: "Raleway", sans-serif;
+  color: greenyellow;
+  width: 50%;
+}
+
+.tablaComp {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  margin: 20px;
+  font-family: "Bangers", cursive;
+  color: greenyellow;
+}
+
 /*Comienzo de los MQ*/
 @media screen and (max-width: 1590px) {
   .contenidoPrincipal {

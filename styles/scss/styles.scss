@@ -976,6 +976,78 @@ td{
     }
 }
 
+/*Comienzo de Competencias*/
+
+.contenidoPpalCompsf{
+    box-shadow: 10px 5px 15px $colorprincipal;
+}
+
+#tituloComp{
+    font-family: $fuenteprincipal;
+    color: $colorprincipal;
+    box-shadow: 10px 5px 15px $colorprincipal;
+    padding-top: 15px;
+}
+
+.textoIntroComp{
+    font-family: $fuentesecundaria;
+    color: $colorprincipal;
+    margin: 20px;
+}
+
+.sectionupComp{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+
+    div{
+        font-family: $fuentesecundaria;
+        color: $colorprincipal;
+        width: 50%;
+    }
+}
+
+.sectionmidComp{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+
+    div{
+        font-family: $fuentesecundaria;
+        color: $colorprincipal;
+        width: 50%;
+    }
+}
+
+.sectiondownComp{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+
+    div{
+        font-family: $fuentesecundaria;
+        color: $colorprincipal;
+        width: 50%;
+    }
+}
+
+.tablaComp{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    margin: 20px;
+    font-family: $fuenteprincipal;
+    color: $colorprincipal;
+}
 
 /*Comienzo de los MQ*/
 
