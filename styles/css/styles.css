@@ -506,6 +506,19 @@ td {
   display: none;
 }
 
+#maximiliano {
+  transition: all 2s;
+}
+#maximiliano:hover {
+  background-image: url(../../images/jugadores/ms1.png);
+}
+#maximiliano:hover img {
+  display: none;
+}
+#maximiliano:hover .nombre {
+  display: none;
+}
+
 #alejandro {
   transition: all 2s;
 }
