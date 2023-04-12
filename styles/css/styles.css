@@ -711,6 +711,10 @@ td {
 .contenidoPrincipalPodios #imagenesPodios .podiosGranCard .podiosCard .podiosImg table {
   margin-top: 15px;
 }
+.contenidoPrincipalPodios #imagenesPodios .podiosGranCard .podiosCard .podiosImg table .tableTitle {
+  font-size: 20px;
+  color: white;
+}
 .contenidoPrincipalPodios #imagenesPodios .podiosGranCard .podiosCard .podiosImg h3 {
   padding-top: 25px;
 }
