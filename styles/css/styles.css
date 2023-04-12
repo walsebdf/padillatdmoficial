@@ -955,6 +955,34 @@ td {
   color: greenyellow;
 }
 
+/*Pagina de Finales en video*/
+#tituloFinVid {
+  font-family: "Bangers", cursive;
+  color: greenyellow;
+  box-shadow: 10px 5px 15px greenyellow;
+  padding-top: 15px;
+}
+
+.granCardFinVid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px;
+}
+.granCardFinVid .smallCardFinVid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 10px 5px 15px greenyellow;
+}
+.granCardFinVid .smallCardFinVid iframe {
+  margin: 5px;
+}
+.granCardFinVid .smallCardFinVid p {
+  font-family: "Raleway", sans-serif;
+  color: greenyellow;
+}
+
 /*Comienzo de los MQ*/
 @media screen and (max-width: 1590px) {
   .contenidoPrincipal {
