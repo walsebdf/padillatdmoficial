@@ -109,32 +109,22 @@ header{
     color: $colorprincipal;
     font-family: 'Bangers', cursive;
     box-shadow: 10px 5px 15px $colorprincipal;
-}
-
-#novedades{
 
     li {
-            color: white;
-            font-family: 'Raleway', sans-serif;
+        color: white;
+        font-family: 'Raleway', sans-serif;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
         a{
-            color: $colorprincipal;
-            font-family: 'Raleway', sans-serif;
-            &:hover {
-                color: $colorhovertext;
-            }
+        color: $colorprincipal;
+        font-family: 'Raleway', sans-serif;
+        &:hover {
+            color: $colorhovertext;
+        }
         }
 
     }
-
-}
-
-#novedades {
-
-    li{
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-
 }
 
 #contenidoup{
