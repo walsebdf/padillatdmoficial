@@ -108,10 +108,11 @@ header:hover {
   font-family: "Bangers", cursive;
   box-shadow: 10px 5px 15px greenyellow;
 }
-
 #novedades li {
   color: white;
   font-family: "Raleway", sans-serif;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 #novedades li a {
   color: greenyellow;
@@ -119,11 +120,6 @@ header:hover {
 }
 #novedades li a:hover {
   color: rgb(152, 168, 152);
-}
-
-#novedades li {
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 
 #contenidoup {
@@ -646,6 +642,24 @@ td {
   padding: 20px;
 }
 
+.tituloVideosSL {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 10px 5px 15px greenyellow;
+}
+.tituloVideosSL .videosSL {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 15px;
+}
+.tituloVideosSL .videosSL iframe {
+  margin: 15px;
+}
+
 .tablaPosiciones {
   display: flex;
   flex-direction: column;
@@ -656,6 +670,7 @@ td {
 }
 .tablaPosiciones img {
   width: 100%;
+  margin: 15px;
 }
 
 .tituloTabla {
