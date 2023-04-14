@@ -979,6 +979,15 @@ td {
   background-image: url(../../images/otonio.jpg);
 }
 
+#fechaActualizacion {
+  font-family: "Raleway", sans-serif;
+  color: greenyellow;
+  box-shadow: 10px 5px 15px greenyellow;
+}
+#fechaActualizacion p {
+  margin: 10px;
+}
+
 /*Pagina de Finales en video*/
 #tituloFinVid {
   font-family: "Bangers", cursive;

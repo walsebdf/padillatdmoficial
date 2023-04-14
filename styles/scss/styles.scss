@@ -1082,6 +1082,16 @@ td{
     background-image: url(../../images/otonio.jpg);
 }
 
+#fechaActualizacion{
+    font-family: $fuentesecundaria;
+    color: $colorprincipal;
+    box-shadow: 10px 5px 15px $colorprincipal;
+
+    p{
+            margin: 10px;
+    }
+}
+
 /*Pagina de Finales en video*/
 
 #tituloFinVid{
