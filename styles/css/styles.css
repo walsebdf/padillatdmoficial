@@ -974,6 +974,11 @@ td {
   color: greenyellow;
 }
 
+/*Competencia de otoño*/
+.contenidoPpalCompOtonio {
+  background-image: url(../../images/otonio.jpg);
+}
+
 /*Pagina de Finales en video*/
 #tituloFinVid {
   font-family: "Bangers", cursive;
