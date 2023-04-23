@@ -710,6 +710,7 @@ td{
     align-items: center;
     padding: 20px;
     box-shadow: 10px 5px 15px $colorprincipal;
+    color: $colorprincipal;
 
     img{
         width: 100%;
@@ -1123,6 +1124,40 @@ td{
         }
     }
 }
+
+/*Página de Superliga*/
+
+.resultadosSL{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .sl_grancard{
+        margin: 20px;
+    }
+}
+
+.sl_tabla{
+
+    font-family: $fuentesecundaria;
+    color: $colorprincipal;
+    
+        th{
+            border: none;
+        }
+
+        td{
+            border: none;
+            border-bottom: 1px solid $colorprincipal;
+        }
+
+        .rdo{
+            font-family: $fuenteprincipal;
+        }
+
+}
+
+
 
 /*Comienzo de los MQ*/
 

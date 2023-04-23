@@ -667,6 +667,7 @@ td {
   align-items: center;
   padding: 20px;
   box-shadow: 10px 5px 15px greenyellow;
+  color: greenyellow;
 }
 .tablaPosiciones img {
   width: 100%;
@@ -1014,6 +1015,31 @@ td {
 .granCardFinVid .smallCardFinVid p {
   font-family: "Raleway", sans-serif;
   color: greenyellow;
+}
+
+/*Página de Superliga*/
+.resultadosSL {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.resultadosSL .sl_grancard {
+  margin: 20px;
+}
+
+.sl_tabla {
+  font-family: "Raleway", sans-serif;
+  color: greenyellow;
+}
+.sl_tabla th {
+  border: none;
+}
+.sl_tabla td {
+  border: none;
+  border-bottom: 1px solid greenyellow;
+}
+.sl_tabla .rdo {
+  font-family: "Bangers", cursive;
 }
 
 /*Comienzo de los MQ*/
