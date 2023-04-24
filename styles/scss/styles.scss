@@ -1,16 +1,16 @@
 $colorprincipal: greenyellow;
-$colorsecundario:green;
+$colorsecundario: green;
 $colorhovertext: rgb(152, 168, 152);
 $fuenteprincipal: 'Bangers', cursive;
 $fuentesecundaria: 'Raleway', sans-serif;
 $fuenteterciaria: 'Audiowide', cursive;
 
-body{
+body {
     background-image: url(../../images/eeporigdark.jpg);
     background-size: 100%;
 }
 
-header{
+header {
     background: linear-gradient($colorsecundario, black);
     text-align: center;
     box-shadow: 10px 5px 15px $colorprincipal;
@@ -20,24 +20,25 @@ header{
     flex-wrap: wrap;
     transition: all 3s;
 
-        &:hover {
-            background: $colorsecundario;
-        }
+    &:hover {
+        background: $colorsecundario;
+    }
 }
 
-.escudoSinTexto{
+.escudoSinTexto {
     display: none;
 }
 
-.navbar-brand{
+.navbar-brand {
     color: $colorprincipal;
     font-family: 'Audiowide', cursive;
     font-size: 25px;
 }
 
-.nav-item{
+.nav-item {
     padding-left: 20px;
     padding-right: 20px;
+
     a {
         color: $colorprincipal;
         font-family: 'Raleway', sans-serif;
@@ -45,36 +46,36 @@ header{
     }
 }
 
-#busquedamenu{
-        width: 200px;
-        transition: all 2s;
+#busquedamenu {
+    width: 200px;
+    transition: all 2s;
 }
 
-#busquedamenu:focus{
+#busquedamenu:focus {
     width: 300px;
     color: $colorsecundario;
 }
 
-.dropdown-menu .dropdown-item{
+.dropdown-menu .dropdown-item {
     color: $colorsecundario;
 }
 
-.navbar-toggler .navbar-toggler-icon{
+.navbar-toggler .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28156, 255, 0, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-.contenidoPrincipal{
+.contenidoPrincipal {
     display: grid;
-    grid-template-areas: 
-    "novedades  titulo"
-    "novedades  contenidoup"
-    "novedades  contenidodown"
-    "footer     footer";
+    grid-template-areas:
+        "novedades  titulo"
+        "novedades  contenidoup"
+        "novedades  contenidodown"
+        "footer     footer";
     grid-template-columns: 35vh auto;
     grid-template-rows: 10vh 300px auto 30vh;
 }
 
-#titulo{
+#titulo {
     grid-area: titulo;
     font-family: 'Bangers', cursive;
     font-size: 20px;
@@ -83,7 +84,7 @@ header{
     box-shadow: 10px 5px 15px $colorprincipal;
 }
 
-.tituloCompleto{
+.tituloCompleto {
     font-size: 20px;
     animation-name: titulocompleto-efecto;
     animation-iteration-count: infinite;
@@ -92,19 +93,33 @@ header{
     animation-delay: 1s;
 }
 
-@keyframes titulocompleto-efecto{
-    0% {font-size: 40px;}
-    25% {font-size: 42px;}
-    50% {font-size: 41px;}
-    75% {font-size: 42px;}
-    100% {font-size: 40px;}
+@keyframes titulocompleto-efecto {
+    0% {
+        font-size: 40px;
+    }
+
+    25% {
+        font-size: 42px;
+    }
+
+    50% {
+        font-size: 41px;
+    }
+
+    75% {
+        font-size: 42px;
+    }
+
+    100% {
+        font-size: 40px;
+    }
 }
 
-.tituloResponsive{
+.tituloResponsive {
     display: none;
 }
 
-#novedades{
+#novedades {
     grid-area: novedades;
     color: $colorprincipal;
     font-family: 'Bangers', cursive;
@@ -116,18 +131,19 @@ header{
         padding-top: 10px;
         padding-bottom: 10px;
 
-        a{
-        color: $colorprincipal;
-        font-family: 'Raleway', sans-serif;
-        &:hover {
-            color: $colorhovertext;
-        }
+        a {
+            color: $colorprincipal;
+            font-family: 'Raleway', sans-serif;
+
+            &:hover {
+                color: $colorhovertext;
+            }
         }
 
     }
 }
 
-#contenidoup{
+#contenidoup {
     grid-area: contenidoup;
     display: flex;
     flex-wrap: wrap;
@@ -138,7 +154,7 @@ header{
     box-shadow: inset -10px -5px 15px $colorprincipal;
 }
 
-#publicidad{
+#publicidad {
     grid-area: publicidad;
     display: flex;
     flex-direction: column;
@@ -147,7 +163,7 @@ header{
     box-shadow: 10px 5px 15px $colorprincipal;
 }
 
-#contenidodown{
+#contenidodown {
     grid-area: contenidodown;
     display: flex;
     flex-wrap: wrap;
@@ -159,10 +175,11 @@ header{
 
 .titulo {
 
-    p{
-        a{
+    p {
+        a {
             font-family: 'Bangers', cursive;
             color: $colorprincipal;
+
             &:hover {
                 color: $colorhovertext;
             }
@@ -172,16 +189,16 @@ header{
 
 }
 
-.descripcion{
+.descripcion {
     color: $colorprincipal;
 }
 
-.imagen{
+.imagen {
     display: flex;
     justify-content: center;
 }
 
-footer{
+footer {
     grid-area: footer;
     display: flex;
     flex-wrap: wrap;
@@ -191,29 +208,29 @@ footer{
     padding-top: 20px;
 }
 
-.lemaPadillero{
+.lemaPadillero {
     font-family: 'Bangers', cursive;
     color: $colorprincipal;
 }
 
-.enlaces ul li a{
+.enlaces ul li a {
     color: $colorprincipal;
 }
 
 /*Pagina TMTs*/
 
-.contenidoPrincipaltmt{
+.contenidoPrincipaltmt {
     display: grid;
-    grid-template-areas: 
-    "ganadorestmt tituloTmt"
-    "ganadorestmt sectionuptmt"
-    "ganadorestmt sectiondowntmt"
-    "footer       footer";
+    grid-template-areas:
+        "ganadorestmt tituloTmt"
+        "ganadorestmt sectionuptmt"
+        "ganadorestmt sectiondowntmt"
+        "footer       footer";
     grid-template-columns: 30vh auto;
     grid-template-rows: 100px 500px 500px 30vh;
 }
 
-#tituloTmt{
+#tituloTmt {
     grid-area: tituloTmt;
     font-family: 'Bangers', cursive;
     color: $colorprincipal;
@@ -221,12 +238,12 @@ footer{
     box-shadow: 10px 5px 15px $colorprincipal;
 }
 
-.tituloGanadores{
+.tituloGanadores {
     font-family: $fuenteprincipal;
     font-size: 30px;
 }
 
-#ganadoresTmt{
+#ganadoresTmt {
     grid-area: ganadorestmt;
     display: flex;
     flex-direction: column;
@@ -234,7 +251,8 @@ footer{
     color: $colorprincipal;
     box-shadow: 10px 5px 15px $colorprincipal;
     overflow: hidden;
-    div{
+
+    div {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -242,7 +260,7 @@ footer{
     }
 }
 
-#sectionuptmt{
+#sectionuptmt {
     grid-area: sectionuptmt;
     display: flex;
     flex-wrap: wrap;
@@ -250,7 +268,7 @@ footer{
     box-shadow: 10px 0px 15px $colorprincipal;
 }
 
-#sectiondowntmt{
+#sectiondowntmt {
     grid-area: sectiondowntmt;
     display: flex;
     flex-wrap: wrap;
@@ -258,7 +276,7 @@ footer{
     box-shadow: 10px 5px 15px $colorprincipal;
 }
 
-#flyer1{
+#flyer1 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -266,7 +284,7 @@ footer{
     padding: 15px;
 }
 
-#tabla1{
+#tabla1 {
     grid-area: tabla1;
     color: $colorprincipal;
     display: flex;
@@ -278,7 +296,7 @@ footer{
     padding-bottom: 20px;
 }
 
-#flyer2{
+#flyer2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -286,7 +304,7 @@ footer{
     padding: 15px;
 }
 
-#tabla2{
+#tabla2 {
     grid-area: tabla2;
     color: $colorprincipal;
     display: flex;
@@ -298,7 +316,7 @@ footer{
     padding-bottom: 20px;
 }
 
-td{
+td {
     padding: 10px;
     border: 1px solid $colorsecundario;
 }
@@ -307,17 +325,17 @@ td{
 
 /*Página Novedades*/
 
-.contenidoPrincipalNov{
+.contenidoPrincipalNov {
     display: grid;
-    grid-template-areas: 
-    "tituloNov"
-    "tabla1Nov"
-    "footer";
+    grid-template-areas:
+        "tituloNov"
+        "tabla1Nov"
+        "footer";
     grid-template-columns: auto;
     grid-template-rows: 100px auto 30vh;
 }
 
-#tituloNov{
+#tituloNov {
     grid-area: tituloNov;
     color: $colorprincipal;
     font-family: $fuenteprincipal;
@@ -325,11 +343,11 @@ td{
     box-shadow: 10px 5px 15px $colorprincipal;
 }
 
-#tablaNovedades{
+#tablaNovedades {
     background: rgba(228, 0, 0, 0);
 }
 
-#tabla1Nov{
+#tabla1Nov {
     grid-area: tabla1Nov;
     display: flex;
     flex-wrap: wrap;
@@ -337,9 +355,11 @@ td{
     padding-top: 15px;
     justify-content: center;
     box-shadow: 10px 5px 15px $colorprincipal;
-    tr{
+
+    tr {
         background: rgba(0, 0, 0, 0.753);
-        td{
+
+        td {
             color: $colorprincipal;
             border: none;
             font-size: 19px;
@@ -347,7 +367,7 @@ td{
     }
 }
 
-.textoNovedades{
+.textoNovedades {
     display: flex;
 }
 
@@ -355,17 +375,17 @@ td{
 
 /*Pagina de Jugadores*/
 
-.contenidoPrincipalJug{
+.contenidoPrincipalJug {
     display: grid;
-    grid-template-areas: 
-    "tituloJug"
-    "tablaJug"
-    "footer";
+    grid-template-areas:
+        "tituloJug"
+        "tablaJug"
+        "footer";
     grid-template-columns: auto;
     grid-template-rows: 100px auto 30vh;
 }
 
-#tituloJug{
+#tituloJug {
     justify-content: space-around;
     grid-area: tituloJug;
     color: $colorprincipal;
@@ -375,183 +395,220 @@ td{
     padding-bottom: 20px;
 }
 
-#tablaJug{
+#tablaJug {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-content: space-around ;
+    align-content: space-around;
     padding-top: 50px;
     padding-bottom: 75px;
     padding-left: 30px;
     box-shadow: 10px 5px 15px $colorprincipal;
 
-        a{
-            text-decoration: none;
-        }
+    a {
+        text-decoration: none;
+    }
 }
 
-.jugador{
+.jugador {
     width: 300px;
     height: 400px;
     padding-top: 50px;
-    .nombre{
+
+    .nombre {
         font-family: $fuentesecundaria;
         color: $colorprincipal;
     }
 }
 
-#lucas{
+#lucas {
     transition: all 1s;
-    &:hover{
-        img{
+
+    &:hover {
+        img {
             display: none;
         }
-        .nombre{
+
+        .nombre {
             display: none;
         }
+
         background-image: url(../../images/jugadores/l1.png);
     }
 }
 
-#nestor{
+#nestor {
     transition: all 1s;
-    &:hover{
-        img{
+
+    &:hover {
+        img {
             display: none;
         }
-        .nombre{
+
+        .nombre {
             display: none;
         }
+
         background-image: url(../../images/jugadores/n1.png);
     }
 }
 
-#sergio{
+#sergio {
     transition: all 2s;
-    &:hover{
-        img{
+
+    &:hover {
+        img {
             display: none;
         }
-        .nombre{
+
+        .nombre {
             display: none;
         }
+
         background-image: url(../../images/jugadores/s1.png);
     }
 }
 
-#walter{
+#walter {
     transition: all 2s;
-    &:hover{
-        img{
+
+    &:hover {
+        img {
             display: none;
         }
-        .nombre{
+
+        .nombre {
             display: none;
         }
+
         background-image: url(../../images/jugadores/w1.png);
     }
 }
 
-#ezequiel{
+#ezequiel {
     transition: all 2s;
-    &:hover{
-        img{
+
+    &:hover {
+        img {
             display: none;
         }
-        .nombre{
+
+        .nombre {
             display: none;
         }
+
         background-image: url(../../images/jugadores/e1.png);
     }
 }
 
-#osvaldo{
+#osvaldo {
     transition: all 2s;
-    &:hover{
-        img{
+
+    &:hover {
+        img {
             display: none;
         }
-        .nombre{
+
+        .nombre {
             display: none;
         }
+
         background-image: url(../../images/jugadores/o1.png);
     }
 }
 
-#jorge{
+#jorge {
     transition: all 2s;
-    &:hover{
-        img{
+
+    &:hover {
+        img {
             display: none;
         }
-        .nombre{
+
+        .nombre {
             display: none;
         }
+
         background-image: url(../../images/jugadores/j1.png);
     }
 }
 
-#mariana{
+#mariana {
     transition: all 2s;
-    &:hover{
-        img{
+
+    &:hover {
+        img {
             display: none;
         }
-        .nombre{
+
+        .nombre {
             display: none;
         }
+
         background-image: url(../../images/jugadores/m1.png);
     }
 }
 
-#emiliana{
+#emiliana {
     transition: all 2s;
-    &:hover{
-        img{
+
+    &:hover {
+        img {
             display: none;
         }
-        .nombre{
+
+        .nombre {
             display: none;
         }
+
         background-image: url(../../images/jugadores/em1.png);
     }
 }
 
-#cesar{
+#cesar {
     transition: all 2s;
-    &:hover{
-        img{
+
+    &:hover {
+        img {
             display: none;
         }
-        .nombre{
+
+        .nombre {
             display: none;
         }
+
         background-image: url(../../images/jugadores/c1.png);
     }
 }
 
-#maximiliano{
+#maximiliano {
     transition: all 2s;
-    &:hover{
-        img{
+
+    &:hover {
+        img {
             display: none;
         }
-        .nombre{
+
+        .nombre {
             display: none;
         }
+
         background-image: url(../../images/jugadores/ms1.png);
     }
 }
 
-#alejandro{
+#alejandro {
     transition: all 2s;
-    &:hover{
-        img{
+
+    &:hover {
+        img {
             display: none;
         }
-        .nombre{
+
+        .nombre {
             display: none;
         }
+
         background-image: url(../../images/jugadores/a1.png);
     }
 }
@@ -560,18 +617,18 @@ td{
 
 /*Pagina de Contacto*/
 
-.contenidoPrincipalCont{
+.contenidoPrincipalCont {
     display: grid;
-    grid-template-areas: 
-    "tituloCon"
-    "disclaimer"
-    "formulario"
-    "footer";
+    grid-template-areas:
+        "tituloCon"
+        "disclaimer"
+        "formulario"
+        "footer";
     grid-template-columns: auto;
     grid-template-rows: 100px auto auto 30vh;
 }
 
-#tituloCon{
+#tituloCon {
     grid-area: tituloCon;
     color: $colorprincipal;
     font-family: $fuenteprincipal;
@@ -579,7 +636,7 @@ td{
     box-shadow: 10px 5px 15px $colorprincipal;
 }
 
-.formularioDeContacto{
+.formularioDeContacto {
     grid-area: formulario;
     display: flex;
     flex-direction: column;
@@ -590,35 +647,42 @@ td{
     padding-top: 20px;
     padding-bottom: 50px;
     box-shadow: 10px 5px 15px $colorprincipal;
-    #name{
+
+    #name {
         width: 300px;
     }
-    #surname{
+
+    #surname {
         width: 300px;
     }
-    #email{
+
+    #email {
         width: 300px;
     }
-    #phone{
+
+    #phone {
         width: 300px;
     }
-    #reason{
+
+    #reason {
         width: 614px;
         height: 304px;
     }
-    div{
+
+    div {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
         align-content: center;
         padding-top: 10px;
     }
-    input{
+
+    input {
         margin: 10px;
     }
 }
 
-.disclaimer{
+.disclaimer {
     grid-area: disclaimer;
     font-family: $fuentesecundaria;
     font-size: 25px;
@@ -633,19 +697,19 @@ td{
 
 /*Comienzo página NovSL*/
 
-#tituloNovSL{
+#tituloNovSL {
     color: $colorprincipal;
     font-family: $fuenteprincipal;
 }
 
-#notaSL{
+#notaSL {
     display: flex;
     flex-direction: column;
     padding-left: 30px;
     padding-right: 30px;
     box-shadow: 10px 5px 15px $colorprincipal;
 
-    .narracionSL{
+    .narracionSL {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -656,17 +720,17 @@ td{
         padding-bottom: 10px;
     }
 
-    .imagenNota{
+    .imagenNota {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
-     
-        img{
+
+        img {
             width: 100%;
         }
 
-        p{
+        p {
             font-size: 15px;
             color: $colorprincipal;
         }
@@ -674,7 +738,7 @@ td{
 
 }
 
-.tituloSL{
+.tituloSL {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -683,7 +747,7 @@ td{
     padding: 20px;
 }
 
-.tituloVideosSL{
+.tituloVideosSL {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -691,19 +755,19 @@ td{
     padding: 20px;
     box-shadow: 10px 5px 15px $colorprincipal;
 
-    .videosSL{
+    .videosSL {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
         margin: 15px;
 
-        iframe{
+        iframe {
             margin: 15px;
         }
     }
 }
 
-.tablaPosiciones{
+.tablaPosiciones {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -712,14 +776,14 @@ td{
     box-shadow: 10px 5px 15px $colorprincipal;
     color: $colorprincipal;
 
-    img{
+    img {
         width: 100%;
         margin: 15px;
     }
 }
 
 
-.tituloTabla{
+.tituloTabla {
     font-family: $fuenteprincipal;
     color: $colorprincipal;
 }
@@ -728,16 +792,16 @@ td{
 
 /*Comienzo Pagina Podios*/
 
-.contenidoPrincipalPodios{
+.contenidoPrincipalPodios {
     display: grid;
-    grid-template-areas: 
-    "tituloPodios   tituloPodios"
-    "imagenesPodios imagenesPodios"
-    "footer         footer";
+    grid-template-areas:
+        "tituloPodios   tituloPodios"
+        "imagenesPodios imagenesPodios"
+        "footer         footer";
     grid-template-columns: auto auto;
     grid-template-rows: 100px auto 30vh;
-    
-    #tituloPodios{
+
+    #tituloPodios {
         grid-area: tituloPodios;
         font-family: $fuenteprincipal;
         color: $colorprincipal;
@@ -745,7 +809,7 @@ td{
         padding-top: 15px;
     }
 
-    #imagenesPodios{
+    #imagenesPodios {
         grid-area: imagenesPodios;
         font-family: $fuentesecundaria;
         color: $colorprincipal;
@@ -755,37 +819,37 @@ td{
         padding: 20px;
         box-shadow: 10px 5px 15px $colorprincipal;
 
-        .podiosGranCard{
+        .podiosGranCard {
             display: flex;
             flex-direction: column;
             align-items: center;
             width: 100%;
 
-            .fecha{
+            .fecha {
                 padding-top: 15px;
             }
 
-            .podiosCard{
+            .podiosCard {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-around;
                 width: 100%;
 
-                .podiosImg{
+                .podiosImg {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
 
-                    table{
+                    table {
                         margin-top: 15px;
 
-                        .tableTitle{
+                        .tableTitle {
                             font-size: 20px;
                             color: white;
                         }
                     }
 
-                    h3{
+                    h3 {
                         padding-top: 25px;
                     }
                 }
@@ -798,7 +862,7 @@ td{
 
 /*Comienzo JugParticulares*/
 
-.contenidoPrincipalJugPart{
+.contenidoPrincipalJugPart {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -806,37 +870,37 @@ td{
     width: 100%;
     box-shadow: 10px 5px 15px $colorprincipal;
 
-        .jugGranCard{
-            width: 100%;
+    .jugGranCard {
+        width: 100%;
 
-            .nombreCompleto{
-                font-family: $fuenteprincipal;
+        .nombreCompleto {
+            font-family: $fuenteprincipal;
+            color: $colorprincipal;
+            padding-top: 15px;
+            box-shadow: 10px 5px 15px $colorprincipal;
+        }
+
+        .jugSmallCard {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            color: white;
+            font-family: $fuentesecundaria;
+            font-size: 20px;
+
+            p {
                 color: $colorprincipal;
-                padding-top: 15px;
-                box-shadow: 10px 5px 15px $colorprincipal;
-            }
-    
-            .jugSmallCard{
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-around;
-                align-items: center;
-                color: white;
-                font-family: $fuentesecundaria;
-                font-size: 20px;
-
-                    p{
-                        color: $colorprincipal;
-                        font-size: 25px;
-                    }
+                font-size: 25px;
             }
         }
+    }
 
 }
 
 /*Página de Entrenamientos*/
 
-#tituloEnt{
+#tituloEnt {
     grid-area: tituloPodios;
     font-family: $fuenteprincipal;
     color: $colorprincipal;
@@ -844,14 +908,14 @@ td{
     padding-top: 15px;
 }
 
-.sectionupEnt{
+.sectionupEnt {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 20px;
     box-shadow: 10px 5px 15px $colorprincipal;
 
-    .sectionupEntText{
+    .sectionupEntText {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
@@ -864,15 +928,15 @@ td{
 
     }
 
-    .sectionupFotos{
+    .sectionupFotos {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        width: 100%;  
+        width: 100%;
     }
 }
 
-.sectionmidEnt{
+.sectionmidEnt {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -880,17 +944,17 @@ td{
     color: $colorprincipal;
     box-shadow: 10px 5px 15px $colorprincipal;
 
-    h2{
+    h2 {
         display: flex;
         justify-content: center;
         padding-bottom: 10px;
     }
 
-    table{
-        
-        tr{
+    table {
 
-            th{
+        tr {
+
+            th {
                 border: 1px solid $colorsecundario;
 
             }
@@ -898,7 +962,7 @@ td{
     }
 }
 
-.sectiondownEnt{
+.sectiondownEnt {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -907,23 +971,23 @@ td{
     color: $colorprincipal;
     box-shadow: 10px 5px 15px $colorprincipal;
 
-    h2{
+    h2 {
         display: flex;
         justify-content: center;
         padding-top: 25px;
     }
 
-    h3{
+    h3 {
         display: flex;
         justify-content: center;
         padding-bottom: 10px;
     }
 
-    table{
+    table {
 
-        tr{
+        tr {
 
-            th{
+            th {
                 border: 1px solid $colorsecundario;
                 padding-left: 10px;
                 padding-right: 10px;
@@ -934,7 +998,7 @@ td{
 
 /*Página de Alquileres*/
 
-#tituloAlq{
+#tituloAlq {
     grid-area: tituloPodios;
     font-family: $fuenteprincipal;
     color: $colorprincipal;
@@ -942,14 +1006,14 @@ td{
     padding-top: 15px;
 }
 
-.sectionupAlq{
+.sectionupAlq {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 20px;
     box-shadow: 10px 5px 15px $colorprincipal;
 
-    .sectionupAlqText{
+    .sectionupAlqText {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
@@ -962,15 +1026,15 @@ td{
 
     }
 
-    .sectionupFotos{
+    .sectionupFotos {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        width: 100%;  
+        width: 100%;
     }
 }
 
-.sectiondownAlq{
+.sectiondownAlq {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -979,23 +1043,24 @@ td{
     color: $colorprincipal;
     box-shadow: 10px 5px 15px $colorprincipal;
 
-    h2{
+    h2 {
         display: flex;
         justify-content: center;
         padding-top: 25px;
     }
 
-    h3{
+    h3 {
         display: flex;
         justify-content: center;
         padding-bottom: 10px;
     }
 
-    table{
+    table {
         margin: 20px;
-        tr{
 
-            th{
+        tr {
+
+            th {
                 border: 1px solid $colorsecundario;
                 padding-left: 10px;
                 padding-right: 10px;
@@ -1006,24 +1071,24 @@ td{
 
 /*Comienzo de Competencias*/
 
-.contenidoPpalCompsf{
+.contenidoPpalCompsf {
     box-shadow: 10px 5px 15px $colorprincipal;
 }
 
-#tituloComp{
+#tituloComp {
     font-family: $fuenteprincipal;
     color: $colorprincipal;
     box-shadow: 10px 5px 15px $colorprincipal;
     padding-top: 15px;
 }
 
-.textoIntroComp{
+.textoIntroComp {
     font-family: $fuentesecundaria;
     color: $colorprincipal;
     margin: 20px;
 }
 
-.sectionupComp{
+.sectionupComp {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -1031,14 +1096,14 @@ td{
     margin: 10px;
     padding: 10px;
 
-    div{
+    div {
         font-family: $fuentesecundaria;
         color: $colorprincipal;
         width: 50%;
     }
 }
 
-.sectionmidComp{
+.sectionmidComp {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -1046,14 +1111,14 @@ td{
     margin: 10px;
     padding: 10px;
 
-    div{
+    div {
         font-family: $fuentesecundaria;
         color: $colorprincipal;
         width: 50%;
     }
 }
 
-.sectiondownComp{
+.sectiondownComp {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -1061,14 +1126,14 @@ td{
     margin: 10px;
     padding: 10px;
 
-    div{
+    div {
         font-family: $fuentesecundaria;
         color: $colorprincipal;
         width: 50%;
     }
 }
 
-.tablaComp{
+.tablaComp {
     display: flex;
     flex-direction: column;
     padding-top: 20px;
@@ -1079,83 +1144,87 @@ td{
 
 /*Competencia de otoño*/
 
-.contenidoPpalCompOtonio{
+.contenidoPpalCompOtonio {
     background-image: url(../../images/otonio.jpg);
 }
 
-#fechaActualizacion{
+#fechaActualizacion {
     font-family: $fuentesecundaria;
     color: $colorprincipal;
     box-shadow: 10px 5px 15px $colorprincipal;
 
-    p{
-            margin: 10px;
+    p {
+        margin: 10px;
     }
 }
 
 /*Pagina de Finales en video*/
 
-#tituloFinVid{
+#tituloFinVid {
     font-family: $fuenteprincipal;
     color: $colorprincipal;
     box-shadow: 10px 5px 15px $colorprincipal;
     padding-top: 15px;
 }
 
-.granCardFinVid{
+.granCardFinVid {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 20px;
-    
-    .smallCardFinVid{
+
+    .smallCardFinVid {
         display: flex;
         flex-direction: column;
         align-items: center;
         box-shadow: 10px 5px 15px $colorprincipal;
 
-        iframe{
+        iframe {
             margin: 5px;
         }
 
-        p{
-                font-family: $fuentesecundaria;
-                color: $colorprincipal;
+        p {
+            font-family: $fuentesecundaria;
+            color: $colorprincipal;
         }
     }
 }
 
 /*Página de Superliga*/
 
-.resultadosSL{
+.resultadosSL {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
+    
+    .sl_grancard {
+        margin-top: 100px;
+        margin-bottom: 100px;
 
-    .sl_grancard{
-        margin: 20px;
+        .sl_tabla {
+
+            font-family: $fuentesecundaria;
+            color: $colorprincipal;
+
+            th {
+                border: none;
+            }
+
+            td {
+                border: none;
+                border-bottom: 1px solid $colorprincipal;
+            }
+
+            .rdo {
+                font-family: $fuenteprincipal;
+            }
+
+        }
     }
 }
 
-.sl_tabla{
 
-    font-family: $fuentesecundaria;
-    color: $colorprincipal;
-    
-        th{
-            border: none;
-        }
-
-        td{
-            border: none;
-            border-bottom: 1px solid $colorprincipal;
-        }
-
-        .rdo{
-            font-family: $fuenteprincipal;
-        }
-
-}
 
 
 
@@ -1163,26 +1232,26 @@ td{
 
 @media screen and (max-width: 1590px) {
 
-    .contenidoPrincipal{
+    .contenidoPrincipal {
         display: grid;
-        grid-template-areas: 
-        "novedades  titulo"
-        "novedades  contenidoup"
-        "novedades  contenidodown"
-        "footer     footer";
+        grid-template-areas:
+            "novedades  titulo"
+            "novedades  contenidoup"
+            "novedades  contenidodown"
+            "footer     footer";
         grid-template-columns: 35vh auto;
         grid-template-rows: 10vh auto auto 30vh;
     }
 
-    .escudoSinTexto{
+    .escudoSinTexto {
         display: block;
     }
 
-    .escudoConTexto{
+    .escudoConTexto {
         display: none;
     }
 
-    #publicidad{
+    #publicidad {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
@@ -1190,23 +1259,23 @@ td{
         box-shadow: inset 0px -5px 15px $colorprincipal;
     }
 
-    #publicidad2{
+    #publicidad2 {
         display: none;
     }
-    
-    #publicidad4{
+
+    #publicidad4 {
         display: none;
     }
 
     /*Pagina TMTs*/
 
-    .contenidoPrincipaltmt{
+    .contenidoPrincipaltmt {
         display: grid;
-        grid-template-areas: 
-        "ganadorestmt  tituloTmt"
-        "ganadorestmt  sectionuptmt"
-        "ganadorestmt  sectiondowntmt"
-        "footer     footer";
+        grid-template-areas:
+            "ganadorestmt  tituloTmt"
+            "ganadorestmt  sectionuptmt"
+            "ganadorestmt  sectiondowntmt"
+            "footer     footer";
         grid-template-columns: 35vh auto;
         grid-template-rows: 10vh auto auto 30vh;
     }
@@ -1217,7 +1286,7 @@ td{
 
 @media screen and (max-width: 1342px) {
 
-    .tituloResponsive{
+    .tituloResponsive {
         display: block;
         font-size: 20px;
         animation-name: tituloresponsive-efecto;
@@ -1227,52 +1296,66 @@ td{
         animation-delay: 1s;
     }
 
-    @keyframes tituloresponsive-efecto{
-        0% {font-size: 35px;}
-        25% {font-size: 37px;}
-        50% {font-size: 36px;}
-        75% {font-size: 37px;}
-        100% {font-size: 35px;}
+    @keyframes tituloresponsive-efecto {
+        0% {
+            font-size: 35px;
+        }
+
+        25% {
+            font-size: 37px;
+        }
+
+        50% {
+            font-size: 36px;
+        }
+
+        75% {
+            font-size: 37px;
+        }
+
+        100% {
+            font-size: 35px;
+        }
     }
 
-    .tituloCompleto{
+    .tituloCompleto {
         display: none;
     }
-    
+
 }
 
 @media screen and (max-width: 991px) {
 
-    .contenidoPrincipal{
+    .contenidoPrincipal {
         display: grid;
-        grid-template-areas: 
-        "titulo"
-        "contenidoup"
-        "contenidodown"
-        "novedades"
-        "footer";
+        grid-template-areas:
+            "titulo"
+            "contenidoup"
+            "contenidodown"
+            "novedades"
+            "footer";
         grid-template-rows: 10vh auto auto auto 30vh;
         grid-template-columns: 100%;
     }
 
-    #contenidoup{
+    #contenidoup {
         box-shadow: inset 0px -5px 15px $colorprincipal;
     }
 
     /*Pagina TMTs*/
 
-    .contenidoPrincipaltmt{
+    .contenidoPrincipaltmt {
         display: grid;
-        grid-template-areas: 
-        "tituloTmt"
-        "sectionuptmt"
-        "sectiondowntmt"
-        "footer";
+        grid-template-areas:
+            "tituloTmt"
+            "sectionuptmt"
+            "sectiondowntmt"
+            "footer";
         grid-template-rows: auto auto auto 30vh;
         grid-template-columns: 100%;
     }
 
-    #ganadoresTmt{
+    #ganadoresTmt {
         display: none;
     }
 
@@ -1280,12 +1363,12 @@ td{
 
     /*Página de Novedades*/
 
-    .contenidoPrincipalNov{
+    .contenidoPrincipalNov {
         display: grid;
-        grid-template-areas: 
-        "tituloNov"
-        "tabla1Nov"
-        "footer";
+        grid-template-areas:
+            "tituloNov"
+            "tabla1Nov"
+            "footer";
         grid-template-columns: auto;
         grid-template-rows: auto auto 30vh;
     }
@@ -1295,12 +1378,12 @@ td{
 
     /*Pagina de Jugadores*/
 
-    .contenidoPrincipalJug{
+    .contenidoPrincipalJug {
         display: grid;
-        grid-template-areas: 
-        "tituloJug"
-        "tablaJug"
-        "footer";
+        grid-template-areas:
+            "tituloJug"
+            "tablaJug"
+            "footer";
         grid-template-columns: auto;
         grid-template-rows: auto auto 30vh;
     }
@@ -1309,16 +1392,17 @@ td{
 
     /*Pagina de Contacto*/
 
-    .contenidoPrincipalCont{
+    .contenidoPrincipalCont {
         display: grid;
-        grid-template-areas: 
-        "tituloCon"
-        "disclaimer"
-        "formulario"
-        "footer";
-        grid-template-columns: auto ;
+        grid-template-areas:
+            "tituloCon"
+            "disclaimer"
+            "formulario"
+            "footer";
+        grid-template-columns: auto;
         grid-template-rows: auto auto auto 30vh;
     }
+
     /*End pagina de contacto*/
 
     /*Pagina de Entrenamiento*/
@@ -1326,4 +1410,9 @@ td{
 
     /*End página de entrenamiento*/
 
+    /*Pagina de Superliga*/
+    
+    .sl_grancard {
+        width: 100%;
+    }
 }
