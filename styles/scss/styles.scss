@@ -1342,8 +1342,13 @@ td {
         box-shadow: inset 0px -5px 15px $colorprincipal;
         .inscribite{
             a{
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-items: center;
+                
                 img{
-                    width: 100%;
+                    width: 90%;
                     margin-top: 20px;
                 }
             }
@@ -1352,8 +1357,13 @@ td {
 
         .videosFinalesTmt{
             a{
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-items: center;
+                
                 img{
-                    width: 100%;
+                    width: 90%;
                     margin-top: 20px;
                 }
             }
