@@ -1120,6 +1120,14 @@ td {
   #contenidoup {
     box-shadow: inset 0px -5px 15px greenyellow;
   }
+  #contenidoup .inscribite a img {
+    width: 100%;
+    margin-top: 20px;
+  }
+  #contenidoup .videosFinalesTmt a img {
+    width: 100%;
+    margin-top: 20px;
+  }
   /*Pagina TMTs*/
   .contenidoPrincipaltmt {
     display: grid;
