@@ -515,6 +515,19 @@ td {
   display: none;
 }
 
+#daniel {
+  transition: all 2s;
+}
+#daniel:hover {
+  background-image: url(../../images/jugadores/dv1.png);
+}
+#daniel:hover img {
+  display: none;
+}
+#daniel:hover .nombre {
+  display: none;
+}
+
 #alejandro {
   transition: all 2s;
 }
