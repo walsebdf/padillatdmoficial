@@ -376,7 +376,8 @@ td {
   transition: all 1s;
 }
 #lucas:hover {
-  background-image: url(../../images/jugadores/l1.png);
+  background-image: url(../../images/jugadores/l2.png);
+  background-size: 350px;
 }
 #lucas:hover img {
   display: none;
@@ -389,7 +390,8 @@ td {
   transition: all 1s;
 }
 #nestor:hover {
-  background-image: url(../../images/jugadores/n1.png);
+  background-image: url(../../images/jugadores/n2.png);
+  background-size: 350px;
 }
 #nestor:hover img {
   display: none;
@@ -402,7 +404,8 @@ td {
   transition: all 2s;
 }
 #sergio:hover {
-  background-image: url(../../images/jugadores/s1.png);
+  background-image: url(../../images/jugadores/s2.png);
+  background-size: 350px;
 }
 #sergio:hover img {
   display: none;
@@ -415,7 +418,8 @@ td {
   transition: all 2s;
 }
 #walter:hover {
-  background-image: url(../../images/jugadores/w1.png);
+  background-image: url(../../images/jugadores/w2.png);
+  background-size: 350px;
 }
 #walter:hover img {
   display: none;
@@ -428,7 +432,8 @@ td {
   transition: all 2s;
 }
 #ezequiel:hover {
-  background-image: url(../../images/jugadores/e1.png);
+  background-image: url(../../images/jugadores/e2.png);
+  background-size: 350px;
 }
 #ezequiel:hover img {
   display: none;
@@ -441,7 +446,8 @@ td {
   transition: all 2s;
 }
 #osvaldo:hover {
-  background-image: url(../../images/jugadores/o1.png);
+  background-image: url(../../images/jugadores/o2.png);
+  background-size: 350px;
 }
 #osvaldo:hover img {
   display: none;
@@ -454,7 +460,8 @@ td {
   transition: all 2s;
 }
 #jorge:hover {
-  background-image: url(../../images/jugadores/j1.png);
+  background-image: url(../../images/jugadores/j2.png);
+  background-size: 350px;
 }
 #jorge:hover img {
   display: none;
@@ -467,7 +474,8 @@ td {
   transition: all 2s;
 }
 #mariana:hover {
-  background-image: url(../../images/jugadores/m1.png);
+  background-image: url(../../images/jugadores/m2.png);
+  background-size: 350px;
 }
 #mariana:hover img {
   display: none;
@@ -480,7 +488,8 @@ td {
   transition: all 2s;
 }
 #emiliana:hover {
-  background-image: url(../../images/jugadores/em1.png);
+  background-image: url(../../images/jugadores/em2.png);
+  background-size: 350px;
 }
 #emiliana:hover img {
   display: none;
@@ -493,7 +502,8 @@ td {
   transition: all 2s;
 }
 #cesar:hover {
-  background-image: url(../../images/jugadores/c1.png);
+  background-image: url(../../images/jugadores/c2.png);
+  background-size: 350px;
 }
 #cesar:hover img {
   display: none;
@@ -506,7 +516,8 @@ td {
   transition: all 2s;
 }
 #maximiliano:hover {
-  background-image: url(../../images/jugadores/ms1.png);
+  background-image: url(../../images/jugadores/ms2.png);
+  background-size: 350px;
 }
 #maximiliano:hover img {
   display: none;
@@ -519,7 +530,8 @@ td {
   transition: all 2s;
 }
 #daniel:hover {
-  background-image: url(../../images/jugadores/dv1.png);
+  background-image: url(../../images/jugadores/dv2.png);
+  background-size: 350px;
 }
 #daniel:hover img {
   display: none;
@@ -532,7 +544,8 @@ td {
   transition: all 2s;
 }
 #alejandro:hover {
-  background-image: url(../../images/jugadores/a1.png);
+  background-image: url(../../images/jugadores/a2.png);
+  background-size: 350px;
 }
 #alejandro:hover img {
   display: none;
