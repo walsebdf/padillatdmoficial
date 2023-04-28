@@ -889,6 +889,18 @@ td {
             font-family: $fuentesecundaria;
             font-size: 20px;
 
+            .videoJTMT{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                margin: 20px;
+
+                iframe{
+                    width: 80%;
+                }
+            };
+
             p {
                 color: $colorprincipal;
                 font-size: 25px;
@@ -1178,6 +1190,7 @@ td {
         flex-direction: column;
         align-items: center;
         box-shadow: 10px 5px 15px $colorprincipal;
+        margin: 20px;
 
         iframe {
             margin: 5px;
@@ -1361,7 +1374,7 @@ td {
                 flex-wrap: wrap;
                 flex-direction: column;
                 align-items: center;
-                
+
                 img{
                     width: 90%;
                     margin-top: 20px;

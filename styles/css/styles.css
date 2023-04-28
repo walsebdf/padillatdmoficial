@@ -763,6 +763,16 @@ td {
   font-family: "Raleway", sans-serif;
   font-size: 20px;
 }
+.contenidoPrincipalJugPart .jugGranCard .jugSmallCard .videoJTMT {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 20px;
+}
+.contenidoPrincipalJugPart .jugGranCard .jugSmallCard .videoJTMT iframe {
+  width: 80%;
+}
 .contenidoPrincipalJugPart .jugGranCard .jugSmallCard p {
   color: greenyellow;
   font-size: 25px;
@@ -1008,6 +1018,7 @@ td {
   flex-direction: column;
   align-items: center;
   box-shadow: 10px 5px 15px greenyellow;
+  margin: 20px;
 }
 .granCardFinVid .smallCardFinVid iframe {
   margin: 5px;
