@@ -686,6 +686,10 @@ td {
   margin: 15px;
 }
 
+.escudoClub {
+  height: 70px;
+}
+
 .tablaPosiciones {
   display: flex;
   flex-direction: column;
@@ -1060,6 +1064,7 @@ td {
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
+  width: 100%;
 }
 .resultadosSL .sl_grancard {
   margin-top: 100px;
@@ -1203,6 +1208,9 @@ td {
     grid-template-columns: auto;
     grid-template-rows: auto auto 30vh;
   }
+  .imagenJug img {
+    width: 100%;
+  }
   /*End pagina de Jugadores*/
   /*Pagina de Contacto*/
   .contenidoPrincipalCont {
@@ -1215,8 +1223,14 @@ td {
   /*Pagina de Entrenamiento*/
   /*End página de entrenamiento*/
   /*Pagina de Superliga*/
-  .sl_grancard {
+  .resultadosSL {
     width: 100%;
+  }
+  .resultadosSL .sl_grancard {
+    width: 100%;
+  }
+  .resultadosSL .escudoClub {
+    display: none;
   }
 }
 
