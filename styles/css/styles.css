@@ -554,6 +554,34 @@ td {
   display: none;
 }
 
+#magan {
+  transition: all 2s;
+}
+#magan:hover {
+  background-image: url(../../images/jugadores/cm2.png);
+  background-size: 350px;
+}
+#magan:hover img {
+  display: none;
+}
+#magan:hover .nombre {
+  display: none;
+}
+
+#opazo {
+  transition: all 2s;
+}
+#opazo:hover {
+  background-image: url(../../images/jugadores/d2.png);
+  background-size: 350px;
+}
+#opazo:hover img {
+  display: none;
+}
+#opazo:hover .nombre {
+  display: none;
+}
+
 /* End pagina Jugadores */
 /*Pagina de Contacto*/
 .contenidoPrincipalCont {

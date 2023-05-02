@@ -642,6 +642,40 @@ td {
     }
 }
 
+#magan {
+    transition: all 2s;
+
+    &:hover {
+        img {
+            display: none;
+        }
+
+        .nombre {
+            display: none;
+        }
+
+        background-image: url(../../images/jugadores/cm2.png);
+        background-size: 350px;
+    }
+}
+
+#opazo {
+    transition: all 2s;
+
+    &:hover {
+        img {
+            display: none;
+        }
+
+        .nombre {
+            display: none;
+        }
+
+        background-image: url(../../images/jugadores/d2.png);
+        background-size: 350px;
+    }
+}
+
 /* End pagina Jugadores */
 
 /*Pagina de Contacto*/
@@ -1234,6 +1268,7 @@ td {
             color: $colorprincipal;
         }
     }
+
 }
 
 /*Página de Superliga*/
