@@ -211,6 +211,7 @@ footer {
 .tituloGanadores {
   font-family: "Bangers", cursive;
   font-size: 30px;
+  margin-top: 20px;
 }
 
 #ganadoresTmt {
@@ -227,6 +228,8 @@ footer {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
+  margin: 10px;
+  border-bottom: 3PX SOLID greenyellow;
 }
 
 #sectionuptmt {

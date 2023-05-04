@@ -246,7 +246,9 @@ footer {
 .tituloGanadores {
     font-family: $fuenteprincipal;
     font-size: 30px;
+    margin-top: 20px;
 }
+
 
 #ganadoresTmt {
     grid-area: ganadorestmt;
@@ -262,6 +264,8 @@ footer {
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
+        margin: 10px;
+        border-bottom: 3PX solid $colorprincipal;
     }
 }
 
