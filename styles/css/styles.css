@@ -108,6 +108,9 @@ header:hover {
   font-family: "Bangers", cursive;
   box-shadow: 10px 5px 15px greenyellow;
 }
+#novedades p {
+  margin-top: 25px;
+}
 #novedades li {
   color: white;
   font-family: "Raleway", sans-serif;
@@ -156,6 +159,9 @@ header:hover {
   box-shadow: 10px 5px 15px greenyellow;
 }
 
+.titulo p {
+  margin: 50px;
+}
 .titulo p a {
   font-family: "Bangers", cursive;
   color: greenyellow;
@@ -197,11 +203,14 @@ footer {
   display: grid;
   grid-template-areas: "ganadorestmt tituloTmt" "ganadorestmt sectionuptmt" "ganadorestmt sectiondowntmt" "footer       footer";
   grid-template-columns: 30vh auto;
-  grid-template-rows: 100px 500px 500px 30vh;
+  grid-template-rows: 7vh auto auto 30vh;
 }
 
 #tituloTmt {
   grid-area: tituloTmt;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: "Bangers", cursive;
   color: greenyellow;
   padding-top: 15px;
@@ -229,7 +238,7 @@ footer {
   flex-wrap: wrap;
   align-items: center;
   margin: 10px;
-  border-bottom: 3PX SOLID greenyellow;
+  border-bottom: 3PX solid greenyellow;
 }
 
 #sectionuptmt {
@@ -306,7 +315,7 @@ td {
   grid-area: tituloNov;
   color: greenyellow;
   font-family: "Bangers", cursive;
-  padding-top: 15px;
+  padding-top: 30px;
   box-shadow: 10px 5px 15px greenyellow;
 }
 
@@ -350,7 +359,7 @@ td {
   grid-area: tituloJug;
   color: greenyellow;
   font-family: "Bangers", cursive;
-  padding-top: 15px;
+  padding-top: 30px;
   box-shadow: 10px 5px 15px greenyellow;
   padding-bottom: 20px;
 }
@@ -661,6 +670,9 @@ td {
 #tituloNovSL {
   color: greenyellow;
   font-family: "Bangers", cursive;
+  height: 50PX;
+  box-shadow: 10px 5px 15px greenyellow;
+  padding-top: 20px;
 }
 
 #notaSL {
@@ -676,9 +688,10 @@ td {
   justify-content: center;
   font-family: "Raleway", sans-serif;
   color: greenyellow;
-  font-size: 20px;
+  font-size: 25px;
   padding-top: 10px;
   padding-bottom: 10px;
+  line-height: 100%;
 }
 #notaSL .imagenNota {
   display: flex;
@@ -757,7 +770,7 @@ td {
   font-family: "Bangers", cursive;
   color: greenyellow;
   box-shadow: 10px 5px 15px greenyellow;
-  padding-top: 15px;
+  padding-top: 25px;
 }
 .contenidoPrincipalPodios #imagenesPodios {
   grid-area: imagenesPodios;
@@ -845,11 +858,11 @@ td {
 
 /*Página de Entrenamientos*/
 #tituloEnt {
-  grid-area: tituloPodios;
   font-family: "Bangers", cursive;
   color: greenyellow;
   box-shadow: 10px 5px 15px greenyellow;
-  padding-top: 15px;
+  padding-top: 20px;
+  height: 50px;
 }
 
 .sectionupEnt {
@@ -869,6 +882,9 @@ td {
   font-size: 25px;
   width: 100%;
   padding-left: 20px;
+}
+.sectionupEnt .sectionupEntText p {
+  line-height: 100%;
 }
 .sectionupEnt .sectionupFotos {
   display: flex;
@@ -921,11 +937,11 @@ td {
 
 /*Página de Alquileres*/
 #tituloAlq {
-  grid-area: tituloPodios;
   font-family: "Bangers", cursive;
   color: greenyellow;
   box-shadow: 10px 5px 15px greenyellow;
-  padding-top: 15px;
+  padding-top: 20px;
+  height: 50px;
 }
 
 .sectionupAlq {
@@ -945,6 +961,9 @@ td {
   font-size: 25px;
   width: 100%;
   padding-left: 20px;
+}
+.sectionupAlq .sectionupAlqText p {
+  line-height: 100%;
 }
 .sectionupAlq .sectionupFotos {
   display: flex;
@@ -987,10 +1006,14 @@ td {
 }
 
 #tituloComp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: "Bangers", cursive;
   color: greenyellow;
   box-shadow: 10px 5px 15px greenyellow;
   padding-top: 15px;
+  height: 7vh;
 }
 
 .textoIntroComp {
@@ -1056,9 +1079,14 @@ td {
 }
 
 #fechaActualizacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   font-family: "Raleway", sans-serif;
   color: greenyellow;
   box-shadow: 10px 5px 15px greenyellow;
+  height: 10vh;
 }
 #fechaActualizacion p {
   margin: 10px;
@@ -1069,7 +1097,8 @@ td {
   font-family: "Bangers", cursive;
   color: greenyellow;
   box-shadow: 10px 5px 15px greenyellow;
-  padding-top: 15px;
+  padding-top: 20px;
+  height: 50px;
 }
 
 .granCardFinVid {
