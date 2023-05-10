@@ -847,9 +847,11 @@ td {
         flex-wrap: wrap;
         justify-content: space-around;
         margin: 15px;
+        width: 100%;
 
         iframe {
             margin: 15px;
+            width: 100%;
         }
     }
 }

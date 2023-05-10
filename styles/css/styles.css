@@ -729,9 +729,11 @@ td {
   flex-wrap: wrap;
   justify-content: space-around;
   margin: 15px;
+  width: 100%;
 }
 .tituloVideosSL .videosSL iframe {
   margin: 15px;
+  width: 100%;
 }
 
 .escudoClub {
