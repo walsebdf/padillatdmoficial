@@ -500,6 +500,20 @@ td {
   display: none;
 }
 
+#julian {
+  transition: all 2s;
+}
+#julian:hover {
+  background-image: url(../../images/jugadores/jp2.png);
+  background-size: 350px;
+}
+#julian:hover img {
+  display: none;
+}
+#julian:hover .nombre {
+  display: none;
+}
+
 #emiliana {
   transition: all 2s;
 }
@@ -840,6 +854,9 @@ td {
   color: white;
   font-family: "Raleway", sans-serif;
   font-size: 20px;
+}
+.contenidoPrincipalJugPart .jugGranCard .jugSmallCard .imagenJug {
+  margin: 50px;
 }
 .contenidoPrincipalJugPart .jugGranCard .jugSmallCard .videoJTMT {
   display: flex;
@@ -1285,6 +1302,7 @@ td {
   }
   .imagenJug img {
     width: 100%;
+    border: 1px solid red;
   }
   /*End pagina de Jugadores*/
   /*Pagina de Contacto*/
