@@ -847,11 +847,9 @@ td {
         flex-wrap: wrap;
         justify-content: space-around;
         margin: 15px;
-        width: 100%;
 
         iframe {
             margin: 15px;
-            width: 100%;
         }
     }
 }
@@ -1530,6 +1528,19 @@ td {
 
     /*End pagina de novedades*/
 
+    /*Paginas de SL*/
+
+    .videosSL {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 15px;
+
+        iframe {
+            margin: 15px;
+            width: 100%;
+        }
+    }
 
     /*Pagina de Jugadores*/
 

@@ -729,11 +729,9 @@ td {
   flex-wrap: wrap;
   justify-content: space-around;
   margin: 15px;
-  width: 100%;
 }
 .tituloVideosSL .videosSL iframe {
   margin: 15px;
-  width: 100%;
 }
 
 .escudoClub {
@@ -1267,6 +1265,17 @@ td {
     grid-template-rows: auto auto 30vh;
   }
   /*End pagina de novedades*/
+  /*Paginas de SL*/
+  .videosSL {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 15px;
+  }
+  .videosSL iframe {
+    margin: 15px;
+    width: 100%;
+  }
   /*Pagina de Jugadores*/
   .contenidoPrincipalJug {
     display: grid;
