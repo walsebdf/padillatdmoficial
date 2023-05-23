@@ -752,6 +752,10 @@ td {
   height: 70px;
 }
 
+.fs-3 {
+  line-height: 100%;
+}
+
 .tablaPosiciones {
   display: flex;
   flex-direction: column;
