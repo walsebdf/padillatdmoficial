@@ -710,11 +710,14 @@ td {
 #notaSL .imagenNota {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 }
 #notaSL .imagenNota img {
   width: 100%;
+}
+#notaSL .imagenNota .grupal {
+  width: 45%;
 }
 #notaSL .imagenNota p {
   font-size: 15px;

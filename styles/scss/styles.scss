@@ -827,11 +827,15 @@ td {
     .imagenNota {
         display: flex;
         flex-wrap: wrap;
-        flex-direction: column;
         align-items: center;
+        justify-content: space-between;
 
         img {
             width: 100%;
+        }
+
+        .grupal{
+            width: 45%;
         }
 
         p {
