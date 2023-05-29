@@ -157,9 +157,20 @@ header {
     padding-bottom: 15px;
     box-shadow: inset -10px -5px 15px $colorprincipal;
     
-        iframe{
-            width: 90%;
-            margin: 15px;
+        .videoInstitucional{
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            box-shadow: 10px 5px 15px $colorprincipal;
+
+            iframe{
+                width: 90%;
+                margin: 15px;
+            }
+        }
+
+        div{
+            margin: 10px;
         }
 }
 
@@ -1379,6 +1390,51 @@ td {
         }
     }
 }
+
+/*Pagina de Series de SL*/
+
+#tituloSlVid{
+    font-family: $fuenteprincipal;
+    color: $colorprincipal;
+    box-shadow: 10px 5px 15px $colorprincipal;
+    padding-top: 20px;
+    height: 50px;
+}
+
+.cardVidSl{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+    box-shadow: 10px 5px 15px $colorprincipal;
+
+    .tituloCardVidSl{
+        font-family: $fuentesecundaria;
+        color: $colorprincipal;
+        padding-top: 20px;
+        height: 50px;
+    }
+
+    .videosSsl{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+        iframe{
+            margin: 5px;
+        }
+    }
+
+}
+
+.tituloCardVidSl{
+    font-family: $fuentesecundaria;
+    color: $colorprincipal;
+    padding-top: 20px;
+    height: 50px;
+}
+
 
 /*Comienzo de los MQ*/
 
