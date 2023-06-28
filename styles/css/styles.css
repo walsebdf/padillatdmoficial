@@ -1179,6 +1179,16 @@ td {
   margin: 10px;
 }
 
+/*Competencia de invierno*/
+.contenidoPpalCompInvierno {
+  background-image: url(../../images/invierno.jpg);
+  background-size: 100%;
+}
+
+.inviernoImagen {
+  box-shadow: 10px 10px 15px white;
+}
+
 /*Pagina de Finales en video*/
 #tituloFinVid {
   font-family: "Bangers", cursive;
