@@ -125,7 +125,7 @@ header {
     font-family: 'Bangers', cursive;
     box-shadow: 10px 5px 15px $colorprincipal;
 
-    p{
+    p {
         margin-top: 25px;
     }
 
@@ -156,28 +156,11 @@ header {
     padding-top: 15px;
     padding-bottom: 15px;
     box-shadow: inset -10px -5px 15px $colorprincipal;
-    
-        div{
-            margin: 10px;
-        }
 
-        .cartaPadilla{
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            font-family: $fuentesecundaria;
-            font-size: 15px;
-            color: $colorprincipal;
-            padding: 20px;
-            box-shadow: 10px 5px 15px $colorprincipal;
+    div {
+        margin: 10px;
+    }
 
-            .firmadeCarta{
-                display: flex;
-                justify-content: end;
-                font-style: italic;
-                
-            }
-        }
 }
 
 #publicidad {
@@ -198,16 +181,33 @@ header {
     padding-bottom: 20px;
     box-shadow: 10px 5px 15px $colorprincipal;
 
-    .videoInstitucional{
+    .videoInstitucional {
         display: flex;
         width: 100%;
         justify-content: space-around;
         box-shadow: 10px 5px 15px $colorprincipal;
         margin: 20px;
 
-        iframe{
+        iframe {
             width: 62%;
             margin: 15px;
+        }
+    }
+
+    .cartaPadilla {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        font-family: $fuentesecundaria;
+        font-size: 15px;
+        color: $colorprincipal;
+        padding: 20px;
+
+        .firmadeCarta {
+            display: flex;
+            justify-content: end;
+            font-style: italic;
+
         }
     }
 }
@@ -863,7 +863,7 @@ td {
             width: 100%;
         }
 
-        .grupal{
+        .grupal {
             width: 45%;
         }
 
@@ -904,70 +904,70 @@ td {
     }
 }
 
-.escudoClub{
+.escudoClub {
     height: 70px;
 }
 
-.fs-3{
+.fs-3 {
     line-height: 100%;
 }
 
-.tablaCompetencia{
+.tablaCompetencia {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     box-shadow: 10px 5px 15px $colorprincipal;
 
-    table{
+    table {
         width: 80%;
         margin: 20px;
         background-color: rgba(0, 0, 0, 0.566);
 
-        tr{
+        tr {
             text-align: center;
             font-size: 20px;
 
-            th{
+            th {
                 font-family: $fuentesecundaria;
                 color: white;
             }
-            
-            td{
+
+            td {
                 font-family: $fuentesecundaria;
                 color: $colorprincipal;
 
-                img{
+                img {
                     width: 10%;
                 }
             }
         }
 
-        .mantiene{
+        .mantiene {
             color: white;
             background: linear-gradient(rgba(255, 255, 255, 0.366), black);
         }
 
-        .repechaje{
+        .repechaje {
             color: yellow;
             background: linear-gradient(rgba(255, 255, 0, 0.366), black);
         }
 
-        .descenso{
+        .descenso {
             color: red;
             background: linear-gradient(rgba(255, 0, 0, 0.366), black);
         }
 
-        .escudoTabla{
-                border-right: none;
+        .escudoTabla {
+            border-right: none;
         }
 
-        .clubTabla{
+        .clubTabla {
             text-align: start;
         }
 
-        .tablaPadilla{
-            background: linear-gradient(green, rgba(255, 255, 255, 0.804), 50% ,green);
+        .tablaPadilla {
+            background: linear-gradient(green, rgba(255, 255, 255, 0.804), 50%, green);
         }
     }
 
@@ -1082,21 +1082,23 @@ td {
             font-family: $fuentesecundaria;
             font-size: 20px;
 
-            .imagenJug{
+            .imagenJug {
                 margin: 50px;
             }
 
-            .videoJTMT{
+            .videoJTMT {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 width: 100%;
                 margin: 20px;
 
-                iframe{
+                iframe {
                     width: 80%;
                 }
-            };
+            }
+
+            ;
 
             p {
                 color: $colorprincipal;
@@ -1135,9 +1137,9 @@ td {
         width: 100%;
         padding-left: 20px;
 
-            p{
-                line-height: 100%;                
-            }
+        p {
+            line-height: 100%;
+        }
 
 
     }
@@ -1238,7 +1240,7 @@ td {
         width: 100%;
         padding-left: 20px;
 
-        p{
+        p {
             line-height: 100%;
         }
 
@@ -1393,8 +1395,8 @@ td {
     background-size: 100%;
 }
 
-.inviernoImagen{
-        box-shadow: 10px 10px 15px white;
+.inviernoImagen {
+    box-shadow: 10px 10px 15px white;
 }
 
 
@@ -1442,7 +1444,7 @@ td {
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
-    
+
     .sl_grancard {
         display: flex;
         justify-content: space-around;
@@ -1456,14 +1458,15 @@ td {
 
             th {
                 border: none;
-                
+
             }
-        
-            tr{
-                .fs-3{
+
+            tr {
+                .fs-3 {
                     text-align: center;
                 }
             }
+
             td {
                 border: none;
                 border-bottom: 1px solid $colorprincipal;
@@ -1479,7 +1482,7 @@ td {
 
 /*Pagina de Series de SL*/
 
-#tituloSlVid{
+#tituloSlVid {
     font-family: $fuenteprincipal;
     color: $colorprincipal;
     box-shadow: 10px 5px 15px $colorprincipal;
@@ -1487,7 +1490,7 @@ td {
     height: 50px;
 }
 
-.cardVidSl{
+.cardVidSl {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -1495,26 +1498,26 @@ td {
     margin: 30px;
     box-shadow: 10px 5px 15px $colorprincipal;
 
-    .tituloCardVidSl{
+    .tituloCardVidSl {
         font-family: $fuentesecundaria;
         color: $colorprincipal;
         padding-top: 20px;
         height: 50px;
     }
 
-    .videosSsl{
+    .videosSsl {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        
-        iframe{
+
+        iframe {
             margin: 5px;
         }
     }
 
 }
 
-.tituloCardVidSl{
+.tituloCardVidSl {
     font-family: $fuentesecundaria;
     color: $colorprincipal;
     padding-top: 20px;
@@ -1633,14 +1636,15 @@ td {
 
     #contenidoup {
         box-shadow: inset 0px -5px 15px $colorprincipal;
-        .inscribite{
-            a{
+
+        .inscribite {
+            a {
                 display: flex;
                 flex-wrap: wrap;
                 flex-direction: column;
                 align-items: center;
-                
-                img{
+
+                img {
                     width: 90%;
                     margin-top: 20px;
                 }
@@ -1648,14 +1652,14 @@ td {
 
         }
 
-        .videosFinalesTmt{
-            a{
+        .videosFinalesTmt {
+            a {
                 display: flex;
                 flex-wrap: wrap;
                 flex-direction: column;
                 align-items: center;
 
-                img{
+                img {
                     width: 90%;
                     margin-top: 20px;
                 }
@@ -1724,9 +1728,9 @@ td {
         grid-template-rows: auto auto 30vh;
     }
 
-    .imagenJug{
+    .imagenJug {
 
-        img{
+        img {
             width: 100%;
             border: 1px solid red;
         }
@@ -1755,15 +1759,15 @@ td {
     /*End página de entrenamiento*/
 
     /*Pagina de Superliga*/
-    
-    .resultadosSL{
+
+    .resultadosSL {
         width: 100%;
 
         .sl_grancard {
             width: 100%;
         }
 
-        .escudoClub{
+        .escudoClub {
             display: none;
         }
     }

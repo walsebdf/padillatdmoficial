@@ -138,21 +138,6 @@ header:hover {
 #contenidoup div {
   margin: 10px;
 }
-#contenidoup .cartaPadilla {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  font-family: "Raleway", sans-serif;
-  font-size: 15px;
-  color: greenyellow;
-  padding: 20px;
-  box-shadow: 10px 5px 15px greenyellow;
-}
-#contenidoup .cartaPadilla .firmadeCarta {
-  display: flex;
-  justify-content: end;
-  font-style: italic;
-}
 
 #publicidad {
   grid-area: publicidad;
@@ -182,6 +167,20 @@ header:hover {
 #contenidodown .videoInstitucional iframe {
   width: 62%;
   margin: 15px;
+}
+#contenidodown .cartaPadilla {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  color: greenyellow;
+  padding: 20px;
+}
+#contenidodown .cartaPadilla .firmadeCarta {
+  display: flex;
+  justify-content: end;
+  font-style: italic;
 }
 
 .titulo p {
