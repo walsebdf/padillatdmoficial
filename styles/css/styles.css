@@ -992,7 +992,12 @@ td {
   justify-content: center;
   padding-bottom: 10px;
 }
-.sectionmidEnt table tr th {
+.sectionmidEnt .tablaEntHorarios tr .horariodeclase {
+  background-color: orange;
+  color: black;
+  font-weight: bolder;
+}
+.sectionmidEnt .tablaEntHorarios tr th {
   border: 1px solid green;
 }
 
@@ -1426,7 +1431,6 @@ td {
   }
   .imagenJug img {
     width: 100%;
-    border: 1px solid red;
   }
   /*End pagina de Jugadores*/
   /*Pagina de Contacto*/

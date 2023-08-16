@@ -1166,9 +1166,15 @@ td {
         padding-bottom: 10px;
     }
 
-    table {
+    .tablaEntHorarios {
 
         tr {
+            
+            .horariodeclase{
+                background-color: orange;
+                color: black;
+                font-weight: bolder;
+            }
 
             th {
                 border: 1px solid $colorsecundario;
@@ -1732,7 +1738,6 @@ td {
 
         img {
             width: 100%;
-            border: 1px solid red;
         }
     }
 
