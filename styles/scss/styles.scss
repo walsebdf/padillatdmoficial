@@ -1,5 +1,6 @@
 $colorprincipal: greenyellow;
 $colorsecundario: green;
+$colorterceario: orange;
 $colorhovertext: rgb(152, 168, 152);
 $fuenteprincipal: 'Bangers', cursive;
 $fuentesecundaria: 'Raleway', sans-serif;
@@ -85,34 +86,7 @@ header {
 }
 
 .tituloCompleto {
-    font-size: 20px;
-    animation-name: titulocompleto-efecto;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
-    animation-duration: 1s;
-    animation-delay: 1s;
-}
-
-@keyframes titulocompleto-efecto {
-    0% {
-        font-size: 40px;
-    }
-
-    25% {
-        font-size: 42px;
-    }
-
-    50% {
-        font-size: 41px;
-    }
-
-    75% {
-        font-size: 42px;
-    }
-
-    100% {
-        font-size: 40px;
-    }
+    font-size: 40px;
 }
 
 .tituloResponsive {
@@ -183,7 +157,7 @@ header {
 
     .videoInstitucional {
         display: flex;
-        width: 100%;
+        width: 50%;
         justify-content: space-around;
         box-shadow: 10px 5px 15px $colorprincipal;
         margin: 20px;
@@ -261,6 +235,46 @@ footer {
 
 /*Pagina TMTs*/
 
+.containerDisclaimer {
+
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    .disclaimerTMTs {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-color: black;
+        border-radius: 10px;
+        border: 3px solid red;
+        width: 90%;
+
+        .disclaimerTMTs_titulo {
+            color: red;
+            text-align: center;
+        }
+
+        .disclaimerTMTs_disposiciones {
+            color: red;
+        }
+
+        .disclaimerTMTs_disposiciones_items {
+            padding-left: 20px;
+            padding-right: 20px;
+            color: red;
+            font-weight: 500;
+        }
+
+        .disclaimerTMTs_disposiciones_items_hl {
+            padding-left: 20px;
+            padding-right: 20px;
+            color: yellow;
+            font-weight: 500;
+        }
+    }
+}
+
 .contenidoPrincipaltmt {
     display: grid;
     grid-template-areas:
@@ -306,6 +320,10 @@ footer {
         align-items: center;
         margin: 10px;
         border-bottom: 3px solid $colorprincipal;
+        a{
+            text-decoration: none;
+            color: $colorprincipal;
+        }
     }
 }
 
@@ -351,6 +369,16 @@ footer {
     align-items: center;
     grid-area: flyer2;
     padding: 15px;
+    border-bottom: 2px double $colorprincipal;
+}
+
+#flyer2a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: flyer2;
+    padding: 15px;
+    
 }
 
 #tabla2 {
@@ -983,6 +1011,50 @@ td {
 
 /*Comienzo Pagina Podios*/
 
+.contenidoPrincipalPodios24 {
+    display: grid;
+    grid-template-areas:
+        "tituloPodios   tituloPodios"
+        "imagenesPodios24 imagenesPodios24"
+        "footer         footer";
+    grid-template-columns: auto auto;
+    grid-template-rows: 100px auto 30vh;
+
+    #tituloPodios {
+        grid-area: tituloPodios;
+        font-family: $fuenteprincipal;
+        color: $colorprincipal;
+        box-shadow: 10px 5px 15px $colorprincipal;
+        padding-top: 25px;
+    }
+
+    #imagenesPodios24 {
+        grid-area: imagenesPodios24;
+        font-family: $fuentesecundaria;
+        color: $colorprincipal;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px;
+        box-shadow: 10px 5px 15px $colorprincipal;
+    }
+    
+    div{
+        .fecha_tmt{
+            font-family: $fuenteprincipal;
+            color: $colorprincipal;
+            text-decoration: underline;
+        }
+
+        a{
+            font-family: $fuentesecundaria;
+            color: $colorterceario;
+            text-decoration: none;
+        }
+    }
+
+}
+
 .contenidoPrincipalPodios {
     display: grid;
     grid-template-areas:
@@ -1004,12 +1076,22 @@ td {
         grid-area: imagenesPodios;
         font-family: $fuentesecundaria;
         color: $colorprincipal;
+        flex-direction: column;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
+        align-items: center;
         padding: 20px;
         box-shadow: 10px 5px 15px $colorprincipal;
 
+        #podios_23_resumen{
+            a{
+                font-family: $fuenteprincipal;
+                font-size: 50px;
+                color: $colorprincipal;
+                padding: 50px;               
+            }
+        }
         .podiosGranCard {
             display: flex;
             flex-direction: column;
@@ -1169,8 +1251,8 @@ td {
     .tablaEntHorarios {
 
         tr {
-            
-            .horariodeclase{
+
+            .horariodeclase {
                 background-color: orange;
                 color: black;
                 font-weight: bolder;
@@ -1590,34 +1672,7 @@ td {
 
     .tituloResponsive {
         display: block;
-        font-size: 20px;
-        animation-name: tituloresponsive-efecto;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in;
-        animation-duration: 1s;
-        animation-delay: 1s;
-    }
-
-    @keyframes tituloresponsive-efecto {
-        0% {
-            font-size: 35px;
-        }
-
-        25% {
-            font-size: 37px;
-        }
-
-        50% {
-            font-size: 36px;
-        }
-
-        75% {
-            font-size: 37px;
-        }
-
-        100% {
-            font-size: 35px;
-        }
+        font-size: 40px;
     }
 
     .tituloCompleto {

@@ -73,31 +73,9 @@ header:hover {
 }
 
 .tituloCompleto {
-  font-size: 20px;
-  animation-name: titulocompleto-efecto;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in;
-  animation-duration: 1s;
-  animation-delay: 1s;
+  font-size: 40px;
 }
 
-@keyframes titulocompleto-efecto {
-  0% {
-    font-size: 40px;
-  }
-  25% {
-    font-size: 42px;
-  }
-  50% {
-    font-size: 41px;
-  }
-  75% {
-    font-size: 42px;
-  }
-  100% {
-    font-size: 40px;
-  }
-}
 .tituloResponsive {
   display: none;
 }
@@ -159,7 +137,7 @@ header:hover {
 }
 #contenidodown .videoInstitucional {
   display: flex;
-  width: 100%;
+  width: 50%;
   justify-content: space-around;
   box-shadow: 10px 5px 15px greenyellow;
   margin: 20px;
@@ -223,6 +201,40 @@ footer {
 }
 
 /*Pagina TMTs*/
+.containerDisclaimer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.containerDisclaimer .disclaimerTMTs {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: black;
+  border-radius: 10px;
+  border: 3px solid red;
+  width: 90%;
+}
+.containerDisclaimer .disclaimerTMTs .disclaimerTMTs_titulo {
+  color: red;
+  text-align: center;
+}
+.containerDisclaimer .disclaimerTMTs .disclaimerTMTs_disposiciones {
+  color: red;
+}
+.containerDisclaimer .disclaimerTMTs .disclaimerTMTs_disposiciones_items {
+  padding-left: 20px;
+  padding-right: 20px;
+  color: red;
+  font-weight: 500;
+}
+.containerDisclaimer .disclaimerTMTs .disclaimerTMTs_disposiciones_items_hl {
+  padding-left: 20px;
+  padding-right: 20px;
+  color: yellow;
+  font-weight: 500;
+}
+
 .contenidoPrincipaltmt {
   display: grid;
   grid-template-areas: "ganadorestmt tituloTmt" "ganadorestmt sectionuptmt" "ganadorestmt sectiondowntmt" "footer       footer";
@@ -264,6 +276,10 @@ footer {
   margin: 10px;
   border-bottom: 3px solid greenyellow;
 }
+#ganadoresTmt div a {
+  text-decoration: none;
+  color: greenyellow;
+}
 
 #sectionuptmt {
   grid-area: sectionuptmt;
@@ -302,6 +318,15 @@ footer {
 }
 
 #flyer2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: flyer2;
+  padding: 15px;
+  border-bottom: 2px double greenyellow;
+}
+
+#flyer2a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -840,6 +865,40 @@ td {
 
 /*End Página de NovSL*/
 /*Comienzo Pagina Podios*/
+.contenidoPrincipalPodios24 {
+  display: grid;
+  grid-template-areas: "tituloPodios   tituloPodios" "imagenesPodios24 imagenesPodios24" "footer         footer";
+  grid-template-columns: auto auto;
+  grid-template-rows: 100px auto 30vh;
+}
+.contenidoPrincipalPodios24 #tituloPodios {
+  grid-area: tituloPodios;
+  font-family: "Bangers", cursive;
+  color: greenyellow;
+  box-shadow: 10px 5px 15px greenyellow;
+  padding-top: 25px;
+}
+.contenidoPrincipalPodios24 #imagenesPodios24 {
+  grid-area: imagenesPodios24;
+  font-family: "Raleway", sans-serif;
+  color: greenyellow;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  box-shadow: 10px 5px 15px greenyellow;
+}
+.contenidoPrincipalPodios24 div .fecha_tmt {
+  font-family: "Bangers", cursive;
+  color: greenyellow;
+  text-decoration: underline;
+}
+.contenidoPrincipalPodios24 div a {
+  font-family: "Raleway", sans-serif;
+  color: orange;
+  text-decoration: none;
+}
+
 .contenidoPrincipalPodios {
   display: grid;
   grid-template-areas: "tituloPodios   tituloPodios" "imagenesPodios imagenesPodios" "footer         footer";
@@ -857,11 +916,19 @@ td {
   grid-area: imagenesPodios;
   font-family: "Raleway", sans-serif;
   color: greenyellow;
+  flex-direction: column;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  align-items: center;
   padding: 20px;
   box-shadow: 10px 5px 15px greenyellow;
+}
+.contenidoPrincipalPodios #imagenesPodios #podios_23_resumen a {
+  font-family: "Bangers", cursive;
+  font-size: 50px;
+  color: greenyellow;
+  padding: 50px;
 }
 .contenidoPrincipalPodios #imagenesPodios .podiosGranCard {
   display: flex;
@@ -1334,29 +1401,7 @@ td {
 @media screen and (max-width: 1342px) {
   .tituloResponsive {
     display: block;
-    font-size: 20px;
-    animation-name: tituloresponsive-efecto;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
-    animation-duration: 1s;
-    animation-delay: 1s;
-  }
-  @keyframes tituloresponsive-efecto {
-    0% {
-      font-size: 35px;
-    }
-    25% {
-      font-size: 37px;
-    }
-    50% {
-      font-size: 36px;
-    }
-    75% {
-      font-size: 37px;
-    }
-    100% {
-      font-size: 35px;
-    }
+    font-size: 40px;
   }
   .tituloCompleto {
     display: none;
