@@ -124,6 +124,7 @@ header {
 #contenidoup {
     grid-area: contenidoup;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
@@ -133,6 +134,13 @@ header {
 
     div {
         margin: 10px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        a{
+            padding-bottom: 20px;
+        }
     }
 
 }
@@ -1699,6 +1707,12 @@ td {
         box-shadow: inset 0px -5px 15px $colorprincipal;
 
         .inscribite {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            width: 90%;
+
             a {
                 display: flex;
                 flex-wrap: wrap;
@@ -1706,9 +1720,14 @@ td {
                 align-items: center;
 
                 img {
-                    width: 90%;
+                    width: 95%;
                     margin-top: 20px;
                 }
+            }
+
+            img {
+                width: 90%;
+                margin-top: 20px;
             }
 
         }
